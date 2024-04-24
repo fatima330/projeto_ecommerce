@@ -1,0 +1,50 @@
+Formato:
+O projeto é um e-commerce dedicado à venda de vinhos.
+
+Tema:
+O tema principal do projeto é vinhos.
+
+
+Requisitos:
+
+1 Página inicial:
+Logo da empresa.
+Apresentação do site e sua proposta única de valor.
+Destaques de vinhos populares ou novidades.
+Links para as principais seções do site.
+
+2 Catálogo de vinhos:
+
+Classificação por tipo de vinho (tinto, branco, rosé, etc.).
+Opções de filtragem por região, safra, preço, etc.
+Descrições detalhadas de cada vinho, incluindo notas de degustação, origem, etc.
+
+3 Compra de vinho - carrinho de compras:
+
+Carrinho de compras funcional.
+Opções de pagamento seguro.
+Informações sobre 
+
+4 Página de Checkout:
+Descrição: A página de checkout é onde os usuários finalizam suas compras e fornecem informações de pagamento e entrega.
+Elementos:
+Formulário de informações de entrega.
+Opções de pagamento (cartão de crédito, PayPal, etc.).
+Resumo do pedido.
+Campo para aplicar códigos promocionais.
+Botão para confirmar a compra.
+
+5 vinícolas:
+Perfis detalhados de vinícolas parceiras.
+História da vinícola, vinhas, métodos de produção, etc.
+Possibilidade de reserva de visitas ou degustações.
+
+6 Personalização:
+Recomendações personalizadas com base nas preferências de cada usuário.
+Histórico de compras e favoritos para uma experiência de usuário mais personalizada.
+Possibilidade de criar listas de desejos.
+
+7 Responsividade e design:
+Design responsivo para garantir uma experiência consistente em dispositivos móveis e desktop.
+Navegação intuitiva e amigável ao usuário.
+Layout atraente e visualmente agradável.

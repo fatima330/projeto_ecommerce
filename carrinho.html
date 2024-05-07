@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header><span>Carrinho de compras</span></header>
+    <main>
+        <div class="Seu Carrinho"></div>
+        <div>
+            <table>
+                <tehad> 
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </tehad>
+                <tbody> <!--agrupa o conteudo do corpo na tabela-->
+                    <tr>   <!--adicionando o produto-->
+                        <td>
+                            <div class="Product">
+                                <img src="img/item do carrinho - cabernet suavignon 2.jpg" alt="vinho tinto">
+                                <div class="Info">
+                                    <div class="Name">Pinot Noir</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 120</td>
+                        <td>
+                            <div class="qtd">
+                                <button>
+                                    <i class='bx bx-minus'></i>
+                                </button>
+                                <span>2</span>
+                                <button>
+                                    <i class='bx bx-plus'></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>R$ 240</td>
+                        <td>
+                            <button class="delete">
+                             <i class='bx bx-x'></i>
+                            </button>
+                        </td>
+                    </tr> <!--acabando a seção do primeiro produto-->
+
+
+                    <tr>     <!--adicionando outro produto-->
+                        <td>
+                            <div class="Product">    <!--engloba a imagem o titulo e a quantidade-->
+                                <img src="img/item do carrinho - cabernet suavignon 2.jpg" alt="vinho tinto">
+                                <div class="Info">
+                                    <div class="Name">Pinot Noir</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 140</td>
+                        <td>
+                            <div class="qtd">
+                                <button>
+                                    <i class='bx bx-minus'></i>
+                                </button>
+                                <span>2</span>
+                                <button>
+                                    <i class='bx bx-plus'></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>R$ 280</td>
+                        <td>
+                            <button class="delete">
+                                <i class='bx bx-x'></i>
+                            </button>
+                        </td>
+                    </tr>                 
+                </tbody>             
+            </table>
+            
+            <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
+                    <div class="box">Caixa de resumo das compras
+                        <header>Resumo das compras</header>
+                        <div class="Info">
+                            <span>Sub-Total</span>
+                            <span>R$ 520</span>
+                        </div>
+                    </div>
+                   <footer>
+                    <span>Total</span>
+                    <span>R$ 520</span>
+                   </footer>
+                   <button>Avançar</button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

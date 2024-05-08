@@ -8,9 +8,29 @@
     <script type="module" src="index.js"></script>
     <title>Contato</title>
 </head>
-<body>
-    
-</body>
+<body id="contato" class="back02">
+    <section>
+        <h2>Contato</h2>
+        <form class="contato" action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <div class="botao_form">
+                <button type="submit" class="btn_enviar">Enviar</button>
+                <button type="reset"  class="btn_limpar">Limpar</button>
+                <button type="submit" class="btn_retornar" > <a href="index.html">Retornar</a></button>   
+            </div>
+
+            <input  type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+           
+        </form>
+    </section>
+</body>     
+
             
         
      
@@ -19,6 +39,6 @@
     
 
 
-<footer></footer>    
-</body>
+    
+
 </html>

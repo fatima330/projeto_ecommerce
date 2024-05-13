@@ -12,9 +12,7 @@ header {
 .logo {
   height: 130px;/*altura da logo */
   border-radius: 0px 15px  15px 0px;
-  left: 0px;
-  
-   
+  left: 0px;   
   
 }
 
@@ -44,27 +42,23 @@ header {
   }
   
 
-  .carrinho {
-   
-    text-align: center;
-  }
+  
 
   .icon{
     margin-top: 10%;
-    height: 30px;  
+    height: 30px; 
+  
 
   }
  
   
-  .page-title {
+    #principal {
     background: rgb(129, 129, 195);
     text-align: center;
   }
    
     .content {
+    background: rgb(231, 227, 227);
       
     }
-  .menu{
-    background: rgb(199, 161, 161);
-  }
-    
+

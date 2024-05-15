@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header><span>Carrinho de compras da <b>WineOn</b></span></header>
+    <header>
+        
+            <nav class="nav">
+                <img class="logo" src="img/logo.png" alt="logo Wine">
+                
+                <ul class="nav-list">
+                  <li><a href="# ">Home</a></li>
+                  <li><a href="#">Produtos</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="#">Quem Somos</a></li>
+                  <li>
+                </ul>
+            
+                    <a href="#" ><img class="icon" src="img/coração.svg" alt=""></a>
+                                   
+                    <a href="#" ><img class="icon" src="img/login.svg" alt=""></a>
+                                 
+              </nav>
+    </header>
+   
+
     <main>
-        <div class="page-title">Seu Carrinho</div>
+        <h1 id="principal">Seu Carrinho</h1>
         <div class="content">
             <section>
             <table>
@@ -24,15 +46,15 @@
                     <tr>   <!--adicionando o produto-->
                         <td>
                             <div class="Product">
-                                <img src="img/item do carrinho - cabernet suavignon 2.jpg" alt="vinho tinto">
+                                <img src="img/item do carrinho - cabernet sauvignon 2.jpg" alt="vinho tinto">
                                 <div class="Info">
-                                    <div class="Name">Pinot Noir</div>
+                                    <div class="name">Cabernet Sauvignon</div>
                                 </div>
                             </div>
                         </td>
-                        <td>R$ 120</td>
+                        <td>R$ 150</td>
                         <td>
-                            <div class="qtd">
+                            <div class="qty">
                                 <button>
                                     <i class='bx bx-minus'></i>
                                 </button>
@@ -42,7 +64,7 @@
                                 </button>
                             </div>
                         </td>
-                        <td>R$ 240</td>
+                        <td>R$ 300</td>
                         <td>
                             <button class="delete">
                              <i class='bx bx-x'></i>
@@ -54,15 +76,15 @@
                     <tr>     <!--adicionando outro produto-->
                         <td>
                             <div class="Product">    <!--engloba a imagem o titulo e a quantidade-->
-                                <img src="img/item do carrinho - cabernet suavignon 2.jpg" alt="vinho tinto">
+                                <img src="img/item do carrinho -Pinot Noir 2.jpg" alt="vinho tinto">
                                 <div class="Info">
-                                    <div class="Name">Pinot Noir</div>
+                                    <div class="name">Pinot Noir</div>
                                 </div>
                             </div>
                         </td>
-                        <td>R$ 140</td>
+                        <td>R$ 180</td>
                         <td>
-                            <div class="qtd">
+                            <div class="qty">
                                 <button>
                                     <i class='bx bx-minus'></i>
                                 </button>
@@ -72,7 +94,7 @@
                                 </button>
                             </div>
                         </td>
-                        <td>R$ 280</td>
+                        <td>R$ 360</td>
                         <td>
                             <button class="delete">
                                 <i class='bx bx-x'></i>
@@ -81,13 +103,15 @@
                     </tr>                 
                 </tbody>             
             </table>
-        </section>
+         </section>
+    
+        
             <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
-                    <div class="box">Caixa de resumo das compras
+                    <div class="box"> <!--Caixa de resumo das compras-->
                         <header>Resumo das compras</header>
                         <div class="Info">
                             <span>Sub-Total</span>
-                            <span>R$ 520</span>
+                            <span>R$ 650</span>
                         </div>
                         <div>
                             <span>Frete</span>
@@ -96,11 +120,13 @@
                     </div>
                    <footer>
                     <span>Total</span>
-                    <span>R$ 520</span>
+                    <span>R$ 650</span>
                    </footer>
                    <button><a href="http://google.com">Checkout</button></a>
             </aside>
+
         </div>
+        
     </main>
 </body>
 </html>

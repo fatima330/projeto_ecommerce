@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
 
 header {
     
@@ -5,20 +12,17 @@ header {
   background: #410e14e9;   
   padding-right: 30px;
 
-    font-size:25px;                                                                                       padding: 30px;
+    font-size:25px;
+    padding: 30px;
     
     display: flex;
     justify-content: right;
-
-   
          
 }
 .logo {
   height: 130px;/*altura da logo */
   border-radius: 0px 15px  15px 0px;
   left: 0px;   
- 
-  
 }
 
 .nav {
@@ -50,26 +54,46 @@ header {
     font-family: sans-serif;
     text-decoration: none;
   }
-  
-
-  
 
   .icon{
     margin-top: 10%;
     height: 35px; 
     padding: 10px;
-  
-
   }
  
-  
     #principal {
-    background: rgb(129, 129, 195);
+    color: rgb(91, 38, 37);
     text-align: center;
   }
    
-    .content {
+    /*.content {
     background: rgb(231, 227, 227);
-      
-    }
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+  
+    
+   
+  
+
+
+
+
+
+   
 

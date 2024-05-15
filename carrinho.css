@@ -12,6 +12,7 @@
   padding: 0;
 }
 
+
 header {
     
   margin-top: 30px;
@@ -67,11 +68,13 @@ header {
     #principal {
     color: rgb(91, 38, 37);
     text-align: center;
+    
   }
    
-    /*.content {
-    background: rgb(231, 227, 227);
+   /* .content {
+    background: rgb(192, 133, 133);
     }*/
+    
 
 
 

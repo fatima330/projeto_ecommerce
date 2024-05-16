@@ -482,6 +482,39 @@ footer .logo_redonda{
   background-color: #8e3051;
 }
 
+.h1_produtos {
+  display: block;
+  justify-content: center;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.inicio_produtos {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.comentarios_produtos {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align: right;
+  border: #ffffff solid 2px;
+  background-color: #74384d;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 11px;
+  width: 75%;
+  gap: 45px;
+  margin: 15px;
+  padding: 15px;
+}
 
 .products_list {
   display: flex;
@@ -490,7 +523,7 @@ footer .logo_redonda{
   text-decoration: none;
   list-style: none;
   gap: 2rem;
-
+  width: 100%;
 }
 
 .click_products {

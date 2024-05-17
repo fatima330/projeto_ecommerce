@@ -10,25 +10,38 @@
     
 </head>
 <body>
-    <header>
-        
-            <nav class="nav">
-                <img class="logo" src="img/logo.png" alt="logo Wine">
-                
-                <ul class="nav-list">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="produtos.html">Produtos</a></li>
-                  <li><a href="contato.html">Contato</a></li>
-                  <li><a href="#">Quem Somos</a></li>
-                  <li>
-                </ul>
+    <header class="header">
+        <nav class="nav">
+          <img class="logo" src="img/logo.png" alt="imagem de uma garrafa de vinho e uma taça">
+          
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+            <li><a href="http://google.com ">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="http://google.com">Quem Somos</a></li>
+            <li><form action="#" method="post">
+             
+              <label for="search-input" class="search-icon">
+                <img  class="lupa"
+                 src="img/lupa.svg" alt="imagem de uma lupa">
+            </label>
+            <input type="text" class="search-input" id="search-input" required />
+            </li>
             
-                    <a href="#" ><img class="icon" src="img/coração.svg" alt="logo favorito"></a>
-                                   
-                    <a href="#" ><img class="icon" src="img/login.svg" alt="logo login"></a>
-                                 
-              </nav>
-    </header>
+            </form>
+            <li>
+              <a href="carrinho.html" ><img class="icon" src="img/carrinho.svg" alt=""></a> <!--fatima colocou o link para redirecionar para carrinho-->
+            </li>
+            <li>
+              <a href="http://google.com" ><img class="icon" src="img/coração.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="http://google.com" ><img class="icon" src="img/login.svg" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
    
 
     <main>
@@ -107,6 +120,25 @@
                     </tr>                 
                 </tbody>             
             </table>
+
+            <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
+                <div class="box"> <!--Caixa de resumo das compras-->
+                    <header>Resumo das compras</header>
+                    <div class="Info">
+                        <span>Sub-Total</span>
+                        <span>R$ 650</span>
+                    </div>
+                    <div>
+                        <span>Frete</span>
+                        <span>Gratuito</span>
+                    </div>
+                </div>
+               <footer>
+                <span>Total</span>
+                <span>R$ 650</span>
+               </footer>
+               <button><a href="checkout.html">Checkout</button></a>
+        </aside>
             
 
 
@@ -205,24 +237,7 @@
          </section>
         
         
-            <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
-                    <div class="box"> <!--Caixa de resumo das compras-->
-                        <header>Resumo das compras</header>
-                        <div class="Info">
-                            <span>Sub-Total</span>
-                            <span>R$ 650</span>
-                        </div>
-                        <div>
-                            <span>Frete</span>
-                            <span>Gratuito</span>
-                        </div>
-                    </div>
-                   <footer>
-                    <span>Total</span>
-                    <span>R$ 650</span>
-                   </footer>
-                   <button><a href="checkout.html">Checkout</button></a>
-            </aside>
+           
 
 
         </div>

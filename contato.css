@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  } 
+
+/* inicio form contato */
+
+  .back02 {
+   
+    background-image: url(img/back02.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+  section{
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    height: 650px;
+    margin-top: 5%;
+    margin-left: 5%;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 44px, rgba(0, 0, 0, 0.3) 0px 7px 133px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+  section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  form.contato label{
+    color: #f5f5f5;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  form.contato input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 25px;
+    font-size: 15px;
+    transition: all 0.5s;
+    border-radius: 6px;
+  }
+  form.contato input:focus{
+    border-radius: 16px;
+  }
+  form.contato textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    transition: all 0.5s;
+  }
+  form.contato textarea:focus{
+    border-radius: 16px;
+  }
+  form.contato button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  form.contato button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+  }
+  /* inicio botoes contato */
+  .botao_form {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;  
+  }
+  .btn_retornar :hover{  
+    transition: 0.9s;
+    color:#0e0d0d; 
+    border: none;
+    align-items: center;
+    text-align: center;  
+  }
+  .btn_retornar a{
+    color:#f9f9f9; 
+    text-decoration: none;
+    text-align: start;
+    text-align: center;  
+  }

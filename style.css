@@ -136,8 +136,7 @@ main{
  display: flex;
  align-items: center;
  justify-content: center;
- min-height: 100vh;
- 
+ min-height: 100vh; 
  flex-direction: column;
 }
 .text{
@@ -148,10 +147,7 @@ main{
 .paragrafo{
   color: #f5f5f5;
   margin-bottom: 50px;
-}
-
-
-/* Fim form contato */
+}/* Fim form contato */
 
 
 

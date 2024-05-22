@@ -156,6 +156,7 @@ h5{
     color: rgb(91, 38, 37);
     text-align: center;
     font-size: 20px;
+    padding-bottom: 25px;
     
   }
 
@@ -163,185 +164,67 @@ h5{
   body {
     background-color: white;
     font-family: 'Lato', sans-serif;
+  }
 
+ main {
+  background: #fff;
+  padding: 0 30px;
+
+  .content {
+    display: flex; /*jogou a box de resumo de compras para o lado direito*/
+
+    section {
+      flex: 1;/* faz com que o elemento assuma o maximo de largura fazendo com que a box de resumo de compras fique para a direita*/
+    }
+
+    aside {
+      background: rgb(223, 211, 211);
+      min-width: 250px;
+     }
+   }
+ }
    
-  }
-
-  table {
-    width: 700px; /*para espaçamento da tabela*/
-    border-collapse: collapse;
-    position: relative;
-   border:1px solid;
-   padding: 10px 10px 10px 10px;
-  }
-
-   td, th {
-    width: 20px;
-    height: 30px;
-    border-collapse: collapse; /*define a separação entre as bordar*/
-    padding: 10px;
-    text-align: left;
-    font-weight:bold; /*para deixar em negrito*/
-    
-  }
-  th {
-    background-color: rgb(147, 131, 131);
-    text-align:center;
-    padding: 10px 5px 10px 5px;
-  }
+ table {
+  width: 100%; /*para a tabela assumir o tamanho total*/
+  border-collapse: collapse;
 
   thead {
-    
-  }
-
-  
-  .name {
-    font-size: 15px;
-    color: black;
-    text-align:center;
-  }
-
-  .category {
-    font-size: 10px;
-    color: rgb(125, 70, 70);
-    text-align:center;
-  }
-  
-  
-
-  .product {
-    display: flex;
-    align-items: center;
-
-    img {
-      border-radius: 6px;
-    }
-
-    .info {
-      margin-left: 20px;
-      .name {
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      .category {
-        color: #666;
-        
-        
+    tr {
+        border-bottom: 3px solid#eee;
+      th {
+        text-align: left; /*texto para a esquerda*/
+        padding-bottom: 10px; /*deixa uma lista*/
+        text-transform: uppercase; /*para deixar o texto maiusculo*/
+        color: gray;
       }
     }
   }
- 
-  .qty {
-    background: #eee;
-    display: inline-flex; 
-    padding: 0 0;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 60px;
-    border-radius: 20px;  /*pra ficar com as bordas redondinhas*/
-    overflow:hidden;   /*pra quando clicar aparecer redondinho*/
-    height: 30px;
-
-    span {
-      margin: 0 10px;
+  tbody{
+    tr {
+      td {
+        padding: 30px 0;
+      }
     }
+  }  
+}
 
-    button {
-      display: flex;
-      align-items: center;
-      background: transparent;
-      border: 0;
-      padding: 0 10px;
+.product {
+  display: flex;
+  align-items: center;
+
+  img{}
+
+  .info {
+      margin-left: 15px;
+    .name {
       font-size: 20px;
-      height: 100%;
-
-      &:hover {
-        background: #ddd;
-      }
+    }
+    .category{
+      color: gray;
     }
   }
-
-  .delete {
-    background: #eee;
-    border: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    cursor: pointer;
-
-    &:hover {
-      background: #ddd;
-    }
-  }
-
-  aside {
-    margin-left: 30px;
-    .box {
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-
-      background: #eee;
-      color: #222;
-
-      header {
-        padding: 15px 20px;
-        font-size: 18px;
-        border-bottom: 1px solid #ccc;
-      }
-      info {
-        padding: 20px;
-        font-size: 16px;
-        > div {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 10px;
-          color: #555;
-          &:last-child {
-            margin: 0;
-          }
-        }
-        button {
-          color:#28a745;
-          background: transparent;
-          border: 0;
-          display:flex;
-          align-items: center;
-          font-size: 16;
-
-          i{
-            font-size: 18px;
-          }
-        }
-      }
-
-      footer {
-        padding: 20px;
-        background: #ddd;
-        font-size: 18px;
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-    > button {
-      border: 0;
-      padding: 15px 0;
-      color: white;
-      background: #28a745;
-      display: block;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 16px;
-
-      &:hover {
-        background: rgb(74, 133, 56);
-      }
-    }
-  }
+}
+  
 
    
   

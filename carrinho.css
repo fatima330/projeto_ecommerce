@@ -159,11 +159,52 @@ h5{
     
   }
 
+
   body {
-    background-color: #eee9e9;
+    background-color: white;
     font-family: 'Lato', sans-serif;
 
    
+  }
+
+  table {
+    width: 700px; /*para espaçamento da tabela*/
+    border-collapse: collapse;
+    position: relative;
+   border:1px solid;
+   padding: 10px 10px 10px 10px;
+  }
+
+   td, th {
+    width: 20px;
+    height: 30px;
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+    font-weight:bold; /*para deixar em negrito*/
+    
+  }
+  th {
+    background-color: rgb(147, 131, 131);
+    text-align:center;
+    padding: 10px 5px 10px 5px;
+  }
+
+  thead {
+    
+  }
+
+  
+  .name {
+    font-size: 15px;
+    color: black;
+    text-align:center;
+  }
+
+  .category {
+    font-size: 10px;
+    color: rgb(125, 70, 70);
+    text-align:center;
   }
   
   
@@ -184,19 +225,21 @@ h5{
       }
       .category {
         color: #666;
+        
+        
       }
     }
   }
  
   .qty {
     background: #eee;
-    display: inline-flex;
+    display: inline-flex; 
     padding: 0 0;
     justify-content: space-around;
     align-items: center;
     min-width: 60px;
-    border-radius: 20px;
-    overflow:hidden;
+    border-radius: 20px;  /*pra ficar com as bordas redondinhas*/
+    overflow:hidden;   /*pra quando clicar aparecer redondinho*/
     height: 30px;
 
     span {

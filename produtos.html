@@ -11,21 +11,24 @@
 </head>
 <body class="produtosbackgroud">
     <header class="header">
+        <!-- SUGIRO UMA DIV AQUI... -->
         <nav class="nav">
           <img class="logo" src="img/logo.png" alt="Uma garrafa de vinho e uma taça">
           
           <button class="hamburger"></button>
+          <!-- E O NAV AQUI, NO LUGAR DA UL. NESSE CASO, NÃO HAVERÁ MAIS A NECESSIDADE DE LI TAMBÉM. APENAS COM O <a> JÁ FICARÁ CORRETO. -->
           <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="quemsomos.html">Quem Somos</a></li>
+            <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
             <li><form action="#" method="post">
              
                 <label for="search-input" class="search-icon">
                     <img class="lupa" src="img/lupa.svg" alt="Uma lupa">
                 </label>
-                
+            <!-- PRECISA DE UM INPUT DE TIPO SUBMIT AQUI TAMBÉM, PARA ENVIAR O FORMULÁRIO DE BUSCA. -->
             <input type="text" class="search-input" id="search-input" required />
             </li>
             
@@ -44,8 +47,11 @@
       </header>
 <!-- essa parte é dos produtos -->
     <main>
+        <!-- SUGIRO QUE SE UTILIZEM DE NOMES EM INGLÊS PARA AS CLASSES E IDS. É BOA PRÁTICA ISSO, INCLUSIVE, UMA VEZ QUE A LÍNGUA INGLES É RECONHECIDA MUNDIALMENTE. -->
+        <!-- SUGIRO QUE TROQUEM DE SPAN PARA DIV AQUI ABAIXO. -->
         <span class="borda">
             <h1 class="h1_produtos">Produtos</h1>
+            <!-- NÃO HÁ NECESSIDADE DESSE SPAN ENGLOBANDO O PARAGRÁFO. -->
             <span class="inicio_produtos">
                 <p>
                     Bem-vindo à página de produtos da Wine Red & White! Explore a nossa seleção exclusiva de vinhos e descubra as três opções disponíveis: vinhos tintos, vinhos brancos e vinhos rosé. 
@@ -74,22 +80,40 @@
         </ul>
 
         <div class="comentarios_produtos">
-            <p>"Os melhores vinhos que já provei! A seleção é impecável." - João M.  <img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"></p>
-            <p>"Adoro a variedade e a qualidade dos vinhos oferecidos." - Carlos T.  <img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"></p>
-            <p>"Serviço excelente e produtos de alta qualidade." - Ana S.  <img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"><img src="./img/estrela.png" alt="5 estrelas" width="20"></p>
-            
-        </div>
-
-
-        
+            <!-- SUGIRO QUE ENGLOBEM ESSE CONTEÚDO EM OUTRA DIV, PARA DEIXAR O <p> RESPONSÁVEL APENAS PELO TEXTO. -->
+            <p>"Os melhores vinhos que já provei! A seleção é impecável." - João M.  
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+            </p>
+            <p>"Adoro a variedade e a qualidade dos vinhos oferecidos." - Carlos T.  
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+            </p>
+            <p>"Serviço excelente e produtos de alta qualidade." - Ana S.  
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+                <img src="./img/estrela.png" alt="5 estrelas" width="20">
+            </p>
+        </div>       
     </main>
 
     <footer>
+        <!-- AQUI TEM UMA TAG FOOTER A MAIS! -->
         <footer>
+        <!-- SUGIRO SUBSTITUIR DIV POR SECTION AQUI ABAIXO. -->
           <div id="footer_content">
               <div id="footer_contacts">
                   <img class="logo_redonda" src="img/logo_redonda.png" alt="">   
                   <h3>Nossos Canais</h3>
+                  <!-- PODEM UTILIZAR LI AQUI TAMBÉM EM VEZ DE DIV! -->
                   <div id="footer_social_media">
                       <a href="#" class="footer_link" id="instagram">
                           <i class="fa-brands fa-instagram"></i>
@@ -103,11 +127,10 @@
                       <a href="img/Anotação 2024-05-10 111118.png" class="footer_link" id="">
                          <img id="menor_idade" src="img/menor_idade.png" alt="">
                       </a>
-                          
                   </div>
               </div>
-
           
+        <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
           <ul class="footer_list">
               <li>
                   <h3>Vinhos</h3>
@@ -139,7 +162,7 @@
                   <a href="#" class="footer_link">Stella di Campalto</a>
               </li>
               <li>
-                  <a href="#" class="footer_link"> Régis & Sylvain</a>
+                  <a href="#" class="footer_link">Régis & Sylvain</a>
               </li>
               <li>
                   <a href="#" class="footer_link">Domaine Jean Fournier</a>
@@ -148,26 +171,28 @@
                   <a href="#" class="footer_link">Domaine Pfister</a>
               </li>
               
+            <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
               </ul>
               <div id="footer_subscribe">
               <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
-              <p>Horários de atendimento: De segunda a segunda 09h as 22hs. </p>
+              <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
       
+              <!-- INCLUIR A TAG FORM PARA ENGLOBAR ESSE INPUT. TAMBÉM SUBSTITUIR O BUTTON POR UM INPUT DO TIPO SUBMIT. -->
+              <!-- NESSE CASO, TAMBÉM ACREDITO QUE NÃO HAJA NECESSIDADE DESSA DIV AQUI ABAIXO. -->
               <div id="input_group">
                   <input type="email" name="" id="email">
                   <button>
                       <i class="fa-regular fa-envelope"></i>
-                      
                   </button>
               </div>
               </div>
               
           </div> 
+          <!-- PREFIRAM USAR CLASSES DO QUE IDS, PESSOAL! -->
           <div id="footer_copyright">
               &#169
               Grupo 02 - Red&White Todos os Direitos Reservados <br>
-             <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
-                
+             <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">  
           </div>  
       </footer>
       </footer>

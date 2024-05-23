@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="carrinho.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 </head>
 <body>
+    <!-- VERIFIQUEM OS APONTAMENTOS FEITOS NA PÁGINA DE PRODUTOS QUANTO AO HEADER, POR FAVOR. -->
     <header class="header">
         <nav class="nav">
           <img class="logo" src="img/logo.png" alt="imagem de uma garrafa de vinho e uma taça">
@@ -20,12 +20,14 @@
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="http://google.com">Quem Somos</a></li>
+            <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
             <li><form action="#" method="post">
              
               <label for="search-input" class="search-icon">
                 <img  class="lupa"
                  src="img/lupa.svg" alt="imagem de uma lupa">
             </label>
+            <!-- PRECISA DE UM INPUT DE TIPO SUBMIT AQUI TAMBÉM, PARA ENVIAR O FORMULÁRIO DE BUSCA. -->
             <input type="text" class="search-input" id="search-input" required />
             </li>
             
@@ -42,22 +44,20 @@
           </ul>
         </nav>
       </header>
-   
 
     <main>
         <h1 id="principal">Seu Carrinho</h1>
         <div class="content">
+            <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
             <section>
               <table>
                 <thead> 
-                    
                     <tr>
                         <th>Produto</th>
                         <th>Preço</th>
                         <th>Quantidade</th>
                         <th>Total</th>
                     </tr>
-                   
                 </thead>
                 <tbody> <!--agrupa o conteudo do corpo na tabela-->
                     <tr>   <!--adicionando o produto-->
@@ -65,6 +65,7 @@
                             <div class="product">
                                 <img src="img/item do carrinho - cabernet sauvignon 2.jpg" alt="vinho tinto">
                                 <div class="Info">
+                                    <!-- SUGIRO UTILIZAR TAGS DE TEXTO AQUI ABAIXO. -->
                                     <div class="name">Cabernet Sauvignon</div>
                                     <div class="category">Vinho tinto</div>
                                 </div>
@@ -90,12 +91,12 @@
                         </td>
                     </tr> <!--acabando a seção do primeiro produto-->
 
-
                     <tr>     <!--adicionando outro produto-->
                         <td>
                             <div class="product">    <!--engloba a imagem o titulo a quantidade e categoria-->
                                 <img src="img/item do carrinho -Pinot Noir 2.jpg" alt="vinho tinto">
                                 <div class="Info">
+                                    <!-- SUGIRO UTILIZAR TAGS DE TEXTO AQUI ABAIXO. -->
                                     <div class="name">Pinot Noir</div>
                                     <div class="category">Vinho tinto</div>
                                 </div>
@@ -122,12 +123,11 @@
                     </tr>                 
                 </tbody>             
             </table>
-
-              
          </section>
 
          <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
             <div class="box"> <!--Caixa de resumo das compras-->
+                <!-- O USO DESSA TAG AQUI ABAIXO ESTÁ INCORRETO! -->
                 <header>Resumo das compras</header>
                 <div class="Info">
                     <span>Sub-Total</span>
@@ -138,21 +138,23 @@
                     <span>Gratuito</span>
                 </div>
             </div>
+            <!-- O USO DESSA TAG AQUI ABAIXO ESTÁ INCORRETO! -->
            <footer>
             <span>Total</span>
             <span>R$ 650</span>
            </footer>
            <button><a href="checkout.html">Checkout</button></a>
          </aside>
-
         </div>
-        
     </main>
+
     <footer>
+        <!-- AQUI ABAIXO PODERIA SER SECTION EM VEZ DE DIV. -->
         <div id="footer_content">
             <div id="footer_contacts">
                 <img class="logo_redonda" src="img/logo_redonda.png" alt="">   
                 <h3>Nossos Canais</h3>
+                <!-- SUGIRO UTILIZAREM LI EM VEZ DE DIV AQUI ABAIXO. -->
                 <div id="footer_social_media">
                     <a href="#" class="footer_link" id="instagram">
                         <i class="fa-brands fa-instagram"></i>
@@ -166,10 +168,10 @@
                     <a href="img/Anotação 2024-05-10 111118.png" class="footer_link" id="">
                        <img id="menor_idade" src="img/menor_idade.png" alt="">
                     </a>
-                        
                 </div>
             </div>
         
+        <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
         <ul class="footer_list">
             <li>
                 <h3>Vinhos</h3>
@@ -201,7 +203,7 @@
                 <a href="#" class="footer_link">Stella di Campalto</a>
             </li>
             <li>
-                <a href="#" class="footer_link"> Régis & Sylvain</a>
+                <a href="#" class="footer_link">Régis & Sylvain</a>
             </li>
             <li>
                 <a href="#" class="footer_link">Domaine Jean Fournier</a>
@@ -210,26 +212,28 @@
                 <a href="#" class="footer_link">Domaine Pfister</a>
             </li>
             
+            <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
             </ul>
             <div id="footer_subscribe">
             <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
-            <p>Horários de atendimento: De segunda a segunda 09h as 22hs. </p>
+            <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
     
+            <!-- INCLUIR A TAG FORM PARA ENGLOBAR ESSE INPUT. TAMBÉM SUBSTITUIR O BUTTON POR UM INPUT DO TIPO SUBMIT. -->
+            <!-- NESSE CASO, TAMBÉM ACREDITO QUE NÃO HAJA NECESSIDADE DESSA DIV AQUI ABAIXO. -->
             <div id="input_group">
                 <input type="email" name="" id="email">
                 <button>
                     <i class="fa-regular fa-envelope"></i>
-                    
                 </button>
             </div>
             </div>
             
         </div> 
+        <!-- PREFIRAM USAR CLASSES DO QUE IDS, PESSOAL! -->
         <div id="footer_copyright">
             &#169
             Grupo 02 - Red&White Todos os Direitos Reservados <br>
            <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
-              
         </div>  
     </footer>
 </body>

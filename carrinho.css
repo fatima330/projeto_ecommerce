@@ -177,10 +177,7 @@ h5{
       flex: 1;/* faz com que o elemento assuma o maximo de largura fazendo com que a box de resumo de compras fique para a direita*/
     }
 
-    aside {
-      background: rgb(223, 211, 211);
-      min-width: 250px;
-     }
+   
    }
  }
    
@@ -201,9 +198,11 @@ h5{
   }
   tbody{
     tr {
+      border-bottom: 3px solid#eee;
       td {
         padding: 30px 0;
       }
+      
     }
   }  
 }
@@ -211,23 +210,115 @@ h5{
 .product {
   display: flex;
   align-items: center;
+}
 
-  img{}
 
   .info {
       margin-left: 15px;
-    .name {
-      font-size: 20px;
-    }
-    .category{
-      color: gray;
+    
+  }
+ 
+.name {
+  color: black;
+  font-size: 15px;
+  font-weight: bold; 
+  
+}
+
+.category {
+  color: rgb(92, 21, 21);
+  font-size: 13px;
+  font-weight: bold; 
+}
+
+.qty {
+  background: #eee;
+  display: inline;
+  padding: 0 0;
+  justify-content: space-around;
+  min-width: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+
+  span {
+    margin: 0 10px;
+  }
+
+  button { 
+    align-items: center;
+    background: transparent;
+    border: none; /*para tirar a borda do botao de + e - */
+    font-size: 15px;
+    padding: 0 5px;
+    height: 100%;
+    border-radius: 10px; /*para arredondar as bordas*/
+    
+    &:hover {
+      background: #ddd;
     }
   }
 }
-  
 
-   
-  
+.delete {
+  border: 0;
+  background: #eee;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /*faz com q p icone fique no meio x*/
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.box {
+
+h2 {
+  font-size: 15px;
+  color: #3b0f14;
+  text-align: center;
+ }
+ span {
+  font-size: 15px;
+ }
+ 
+}
+
+.total {
+  span {
+    font-size: 17px;
+    color: black;
+  }
+}
+
+
+aside {
+  background: rgb(227, 224, 224);
+  min-width: 240px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin: 15px 10px 15px 15px; /*espaçamento bordas*/
+  padding: 20px;
+
+  button {
+    background: rgb(94, 179, 94);
+    color: white;
+    border: 0;
+    padding: 5px ;
+    display: block;
+    text-transform: uppercase;
+  }
+ }
+
+ 
+
+
 
 
 

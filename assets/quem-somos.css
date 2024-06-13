@@ -1,0 +1,56 @@
+/* Estilo global */
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.quemSomosBackground {
+    background-color: #8e3051;
+    color: #ffffff;
+}
+
+.page-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #74384d;
+    border-radius: 8px;
+}
+
+.history {
+    width: 90%;
+    background-color: #74384d;
+    padding: 20px;
+    border: 2px solid #74384d;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+.history section {
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+
+    .history {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .history section {
+        font-size: 14px;
+    }
+}

@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <body>
-        <link del="styleshee"href="indexcss">
-    </body>
-   
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
-    <div>
-        <h4>Login</h4>
-        
-    </div>
+    <h1>Login</h1>
+
     <nav>
         <ul>
-            <li>
-                <a>Campos Obrigatórios*</a>
+            <li><a>Campos Obrigatórios*</a>
             </li>
         </ul>
     </nav>
-    <h1>Informações Pessoais</h1>
 
-    <h2>Nome completo*</h2>
-    <input type="text"placeholder=Nome">
-    <h2>Cpf</h2>
-    <input type="text"placeholder=Cpf">
-    <h2>Data de Nascimento*</h2>
-    <input type="text"placeholder=Data de Nascimento">
-    <h2>Email*</h2> 
-    <input type="text"placeholder=Email">
-    <h2>Celular*</h2>
-    <input type="text"placeholder=Celular">
-    
-    
+    <h2>Informações Pessoais</h>
+
+    <label for="name">Nome completo*</label>
+    <input type="text" name="name" placeholder=Nome">
+    <label for="cpf">Cpf</label>
+    <input type="text" name="cpf" placeholder=CPF">
+    <label for="data-nascimento">Data de Nascimento*</label>
+    <input type="text" name="data-nascimento" placeholder="Data de nascimento">
+    <label for="email">Email*</label>
+    <input type="email" name="email" placeholder=E-mail">
+    <label for="celular">Celular*</label>
+    <input type="text" name="celular" placeholder=Celular">
+
     <main>
         <section>
             <h3>*Declaro que li e aceito os termos de uso</h3>
-            <p>
-                Email/Cpf 
 
-<input type placeholder= "Email/Cpf">
-            </p>
-            <section>
-                <p>
-                    Senha
-                    <input type placeholder="Senha">
-                    <button>Enviar</button>
-                </p>
-            </section>
+            <p>Email/CPF</p>
+            <input type="text" placeholder="Email/CPF">
+
+            <div>
+                <p>Senha</p>
+
+                <input type="password" placeholder="Senha">
+                <button>Enviar</button>
+            </div>
         </section>
     </main>
-<h4>Cadastrar Conta </h4> <input type placeholder="Cadastara Conta">
 
+    <h4>Cadastrar conta</h4>
+    <input type="text" placeholder="Cadastar conta">
 </body>
+
 </html>

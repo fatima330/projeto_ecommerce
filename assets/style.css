@@ -301,20 +301,26 @@ footer .logo_redonda{
 
 
 }
-#footer_subscribe{
+.footer_subscribe{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 
   
 }
-#footer_subscribe p{
+.footer_subscribe p{
   /* horario de atendimento */
   color: var(--color-neutral-30);
   font-family: 'Inter',sans-serif;
   font-size: 16px;
- 
-
+  text-decoration: none;
+}
+.footer_subscribe p a{
+  /* horario de atendimento */
+  color: var(--color-neutral-30);
+  font-family: 'Inter',sans-serif;
+  font-size: 16px;
+  text-decoration: none;
 }
 #input_group{
   display: flex;
@@ -347,7 +353,7 @@ footer .logo_redonda{
 
 }
 
-#footer_copyright{
+.footer_copyright{
   display: flex;
   justify-content: center;    
   background-color: var(--color-neutral-0);

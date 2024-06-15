@@ -316,7 +316,6 @@ footer .logo_redonda{
   text-decoration: none;
 }
 .footer_subscribe p a{
-  /* horario de atendimento */
   color: var(--color-neutral-30);
   font-family: 'Inter',sans-serif;
   font-size: 16px;

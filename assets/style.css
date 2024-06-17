@@ -16,9 +16,8 @@
 
 .back01 {
   height: calc(100vh - 70px);
-  background-image: url(/img/back01.jpeg);
   background-repeat: no-repeat;
-  background-color: var(--color-neutral-40);
+  background-color: #8C1F28;
   background-size: cover;
   background-position: right center;
 }

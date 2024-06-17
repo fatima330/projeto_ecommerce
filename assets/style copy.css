@@ -5,20 +5,20 @@
     --color-neutral-30:#a8a29e;
     --color-neutral-40:#f5f5f5;
 }
-
 *{
   font-family: 'Inter',sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 1px;
+
 }  
+
 
 .back01 {
   height: calc(100vh - 70px);
-  background-image: url(/img/back01.jpeg);
+  background-image: url(img/back01.jpeg);
   background-repeat: no-repeat;
-  background-color: var(--color-neutral-10);
   background-size: cover;
   background-position: right center;
 }
@@ -63,6 +63,7 @@ h5{
   height: 50%;
   width: 50%;
   position: relative;
+ 
 }
 .nav-list {
   width: 90%;
@@ -117,7 +118,7 @@ h5{
   outline: none;
   padding-left: 40px;/* onde o cursor começa na busca */
   transition: all 0.7s;
-  background-color:#110303e9;
+  background-color:#20080be9;
   color: white;
   font-size: 20px;
 }
@@ -126,34 +127,17 @@ h5{
   background-color: #20080be9;
 }
 .search-input:focus {  
-  background-color: #2c0f12e9;
-  box-shadow: 1px 1px 5px #16030c;
+  box-shadow: 3px 3px 5px #eae4e4;
 }
-
-.welcome {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  padding: 20px;
-  margin: 20px;
-  width: 70%;
-  gap: 20px;
-  color: #ffffff;
-  position:absolute;
-  border-radius: 15px;
-  background-color:#363636;
-}
-
 /* inicio form contato */
 
 /*Página do Obrigado*/
 main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; 
-  flex-direction: column;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh; 
+ flex-direction: column;
 }
 .text{
   font-size: 45px;
@@ -178,23 +162,20 @@ main{
       z-index: 2;
     }
     .nav-list {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
       background:#3b0f14;
-      clip-path: circle(0px at 85% 77px);
-      transition: 0.5s ease;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       gap: 0;
       pointer-events: none;
       z-index: 1;
-      border-radius: 15px;
     }
     .nav-list a {
       font-size: 24px;
@@ -209,9 +190,6 @@ main{
     .nav-list li:nth-child(3) a {
       transition: 0.5s 0.6s;
     }
-    .nav-list li:nth-child(4) a {
-      transition: 0.6s 0.8s;
-    }
     .nav.active .nav-list {
       clip-path: circle(1500px at 90% -15%);
       pointer-events: all;
@@ -220,9 +198,9 @@ main{
       opacity: 1;
     }
     .nav.active .hamburger {
-      position: absolute;
-      top: 66px;
-      right: 26px;
+      position: fixed;
+      top: 26px;
+      right: 16px;
       border-top-color: transparent;
     }
     .nav.active .hamburger::before {
@@ -317,19 +295,21 @@ footer .logo_redonda{
 }
 .footer_list .footer_link{
   color: var(--color-neutral-30);
+  
 }
-
 .footer_list .footer_link:hover{
   color:#7f37c9 ;
   transition: all 0.4s;
-}
 
+
+}
 .footer_subscribe{
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
 
+  
+}
 .footer_subscribe p{
   /* horario de atendimento */
   color: var(--color-neutral-30);
@@ -337,25 +317,24 @@ footer .logo_redonda{
   font-size: 16px;
   text-decoration: none;
 }
-
 .footer_subscribe p a{
   color: var(--color-neutral-30);
   font-family: 'Inter',sans-serif;
   font-size: 16px;
   text-decoration: none;
 }
-
 #input_group{
   display: flex;
   align-items: center;
   background-color: var(--color-neutral-0);
   border-radius: 4px;
-}
 
+}
 #input_group input{
   all: unset;
   padding: 0.75rem;
   width: 100%;
+  
 }
 
 #input_group button{
@@ -368,10 +347,11 @@ footer .logo_redonda{
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   transition: all 0.4s;
-}
-
+}  
 #input_group button:hover{
+    
   opacity: 0.8;
+
 }
 
 .footer_copyright{

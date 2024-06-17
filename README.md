@@ -36,11 +36,11 @@ Este projeto foi desenvolvido como parte do curso da Proz pela Turma 2. Nosso ob
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/fatima330/projeto_ecommerce.git
    ```   
 2. **Navegue até o diretório do projeto**:
    ```
-   cd nome-do-repositorio
+   cd projeto_ecommerce
   
 3. **Abra o arquivo index.html no seu navegador para visualizar o site**.
 

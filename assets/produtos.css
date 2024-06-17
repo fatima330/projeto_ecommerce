@@ -2,20 +2,27 @@
 * {
   font-family: "Lato" sans-serif;
   text-decoration: none;
+  
 }
 
 .produtosbackgroud {
-  background-color: #8e3051;
+  background-color: #360d12d8;
+  background-image: url(/img/wallhere2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: url(filters.svg#filter) blur(2px) brightness(40%);
 }
 
 .border {
-  background-color: #74384d;
-  border: #74384d solid 2px;
+  background-color: #20080be9;
+  border: #ffffff solid 2px;
   border-radius: 8px;
   padding: 20px;
   margin-top: 35px;
   margin-left: 35px;
   margin-right: 35px;
+  text-align: center;
 }
 
 .h1 {
@@ -34,7 +41,7 @@
   text-align: justify;
   justify-content: center;
   color: #ffffff;
-  width: 90%;
+  width: 100%;
   margin: 8px;
   padding: 20px;
 }
@@ -44,7 +51,7 @@
   flex-direction: column;
   text-align: right;
   border: #ffffff solid 2px;
-  background-color: #74384d;
+  background-color: #20080be9;
   border-radius: 20px;
   color: #ffffff;
   font-size: 16px;
@@ -68,7 +75,7 @@
 .click_products {
   display: block;
   justify-content: space-between;
-  background-color: #450017;
+  background-color: #20080be9;
   font-size: 20px;
   color: #f5f5f5;
   padding: 3px;
@@ -78,6 +85,11 @@
   border: 2px #450017 solid;
   border-radius: 2%;
   gap: 2rem;
+}
+
+.click_products:hover{
+  transform: scale(1.05);
+  transition: all ease 0.3s;
 }
 
 .center_icon {
@@ -114,7 +126,11 @@
 .img_wine {
   border-radius: 8px;
   width: 320px;
+}
 
+.img_wine:hover {
+  filter:brightness(50%);
+  transition: all ease-in 0.2s;
 }
 
 

@@ -1,38 +1,37 @@
-*{
-    font-family: 'Inter',sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-  
-  }
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
 
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #101026;
-    flex-direction: column;
-   }
-   .text{
-     font-size: 45px;
-     color: #f5f5f5;
-     margin-bottom: 30px;
-   }
-   .paragrafo{
-     color: #f5f5f5;
-     margin-bottom: 50px;
-   }
-   .btn{
-    background: #f5f5f5;
-    padding: 15px 55px;
-    text-decoration: none;
-    color: #101026;
-    font-size: 18px;
-    transition: all 0.7s;
-    border-radius: 8px;
-   }
-   .btn:hover{
-    border-radius: 16px;
-   }
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #101026;
+  flex-direction: column;
+}
+.text {
+  font-size: 45px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
+}
+.paragrafo {
+  color: #f5f5f5;
+  margin-bottom: 50px;
+}
+.btn {
+  background: #f5f5f5;
+  padding: 15px 55px;
+  text-decoration: none;
+  color: #101026;
+  font-size: 18px;
+  transition: all 0.7s;
+  border-radius: 8px;
+}
+.btn:hover {
+  border-radius: 16px;
+}

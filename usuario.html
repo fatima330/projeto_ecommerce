@@ -9,9 +9,48 @@
     <link rel="stylesheet" href="../assets/usuario.css">
     <link rel="stylesheet" href="../assets/style.css">
     <title>Conecte-se</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/produtos.css">
 </head>
-<body style="background: #8e3051;"></body>
+<body style="background: #8e3051;">
+    <header class="header">
+        <div>
+            <nav class="nav">
+                <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
+                <button class="hamburger"></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>          
+                    <li>
+                        <form action="#" method="post">           
+                            <label for="search-input" class="search-icon">
+                            <img  class="lupa"src="img/lupa.svg" alt="Uma lupa"></label>        
+                            <input type="text" class="search-input" id="search-input" required />
+                        </form>
+                    </li>               
+                    <li>
+                        <a href="carrinho.html">
+                            <img class="icon" src="img/carrinho.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="icon" src="img/coração.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./usuario.html">
+                            <img class="icon" src="img/login.svg">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    
     <h1>Conecte-se</h1>
 
     <nav>
@@ -40,7 +79,7 @@
 
             <p>Email/CPF</p> 
             <input type="text" placeholder="Email/CPF">
-<button>Email/Cpf</button>
+                <button>Email/Cpf</button>
             <div>
                 <p>Senha</p>
 
@@ -55,79 +94,92 @@
     <button>Cadastrar Conta</button>
 
 
-    <div id="footer_social_media">
-        <a href="#" class="footer_link" id="instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="#" class="footer_link" id="facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="#" class="footer_link" id="whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="img/Anotação 2024-05-10 111118.png" class="footer_link" id="">
-            <img id="menor_idade" src="img/menor_idade.png" alt="">
-        </a>
-    </div>
-</section>
-<ul class="footer_list">
-    <li>
-        <h3>Vinhos</h3>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Vinhos Tintos</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Vinhos Brancos</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Vinhos Rosés</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Vinhos Espumantes</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Champagnes</a>
-    </li>
-</ul>
-<ul class="footer_list">
-    <li>
-        <h3>Produtores</h3>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Thibault Liger-Belair</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Stella di Campalto</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Régis & Sylvain</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Domaine Jean Fournier</a>
-    </li>
-    <li>
-        <a href="#" class="footer_link">Domaine Pfister</a>
-    </li>
-    <div class="footer_subscribe">
-        <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
-        <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
-        <p><a href="conosco.html" class="footer_link">Trabalhe conosco</a></p>
+    <footer>
+        <!-- SUGIRO SUBSTITUIR DIV POR SECTION AQUI ABAIXO. -->
+        <div id="footer_content">
+            <section id="footer_contacts">
+                <img class="logo_redonda" src="img/logo_redonda.png">
+                <h3>Nossos Canais</h3>
+                <!-- PODEM UTILIZAR LI AQUI TAMBÉM EM VEZ DE DIV! -->
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="img/Anotação 2024-05-10 111118.png" class="footer_link" id="">
+                        <img id="menor_idade" src="img/menor_idade.png" alt="">
+                    </a>
+                </div>
+            </section>
+            <ul class="footer_list">
+                <li>
+                    <h3>Vinhos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Vinhos Tintos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Vinhos Brancos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Vinhos Rosés</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Vinhos Espumantes</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Champagnes</a>
+                </li>
+            </ul>
+            <ul class="footer_list">
+                <li>
+                    <h3>Produtores</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Thibault Liger-Belair</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Stella di Campalto</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Régis & Sylvain</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Domaine Jean Fournier</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Domaine Pfister</a>
+                </li>
+                <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
+            </ul>
+            <div class="footer_subscribe">
+                <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
+                <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
+                <p><a href="conosco.html" class="footer_link">Trabalhe conosco</a></p>
 
-        <div id="input_group">
-            <input type="email" name="" id="email">
-            <button>
-                <i class="fa-regular fa-envelope"></i>
-            </button>
+
+                <!-- INCLUIR A TAG FORM PARA ENGLOBAR ESSE INPUT. TAMBÉM SUBSTITUIR O BUTTON POR UM INPUT DO TIPO SUBMIT. -->
+                <!-- NESSE CASO, TAMBÉM ACREDITO QUE NÃO HAJA NECESSIDADE DESSA DIV AQUI ABAIXO. -->
+                <div id="input_group">
+                    <input type="email" name="" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <div class="footer_copyright">
-        &#169
-        Grupo 02 - Red&White Todos os Direitos Reservados <br>
-        <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
-    </div>
-</footer>
-</div>
+        <!-- PREFIRAM USAR CLASSES DO QUE IDS, PESSOAL! -->
+        <div class="footer_copyright">
+            &#169
+            Grupo 02 - Red&White Todos os Direitos Reservados <br>
+            <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
+        </div>
+    </footer>
 </body>
-
 </html>

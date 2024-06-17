@@ -309,18 +309,23 @@ h2 {
  span {
   font-size: 15px;
  }
+ .green {
+  color: green;
+ }
 }
 
 
 .total {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
   span {
     font-size: 15px;
     color: black;
     padding: 5px;
     background: #ddd;
-    display: flex;
-    justify-content: space-between;
-  
+    
   }
 }
 

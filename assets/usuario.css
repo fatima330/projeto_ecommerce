@@ -1,0 +1,27 @@
+/* Página de produtos */
+* {
+    font-family: "Lato" sans-serif;
+    text-decoration: none;
+    
+  }
+  
+  .usuariobackgroud {
+    background-color: #360d12d8;
+    background-image: url(/img/wallhere2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: url(filters.svg#filter) blur(2px) brightness(40%);
+  }
+  
+  .border {
+    background-color: #20080be9;
+    border: #ffffff solid 2px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+  }
+  

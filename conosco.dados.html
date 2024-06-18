@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<link rel = "stylesheet" href = "dados.css"/>
+<body>
+    <div class="content"><form action=""><fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label for="Nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+        </div>
+        <div class="row">
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Digite seu Sobrenome" autocomplete="off" required>
+        </div>
+        <div class="row">
+            <label for="Email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                </div>
+        <div class="row">
+            <label for="dtnasc">Data de Nascimento</label>
+            <input type="date" id="dtnasc" name="dtnasc">
+        </div>
+        <div class="row">
+            <label for="">Estado Civil</label>
+            <input type="checkbox" id="Casado" name="Casado">
+            <imput type="radio" value="Casado" id="Casado" name="Estado Civil"></imput>
+            <label for="Casado">Casado</label> 
+            <input type="checkbox" id="Solteiro" name="Solteiro">
+            <imput type="radio" value="Solteiro" id="Solteiro" name="Estado Civil"></imput>
+            <label for="Solteiro">Solteiro</label> 
+        </div>
+        <div class="row">
+            <label for="Filhos">Filhos</label>
+            <input type="number" id="filhos" name="filhos" max="10" min="0">
+        </div>
+<fieldset>
+    <legend>Fale sobre Você</legend>
+    <div class="row">
+        <textarea name="" id="" cols="30" rows="5" placeholder="Descreva suas Habilidades" autocomplete="off"></textarea>
+    </div>
+    <div class="row">
+        <input type="file">
+    </div>
+</fieldset>
+<div class="buttons">
+    <input type="submit">
+    <input type="reset" value="limpar">
+</div>
+    </form>
+    
+    
+    </div>
+    
+
+    
+</body>
+</html>

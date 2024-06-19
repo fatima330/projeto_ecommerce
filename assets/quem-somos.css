@@ -1,19 +1,123 @@
-/* Estilo global */
-* {
-    font-family: "Lato", sans-serif;
+/* Estilos globais */
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body.quemSomosBackground {
-    background-color: #8e3051;
-    color: #ffffff;
-}
-
-.page-header {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    margin: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #ccc;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.search-input {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+#footer_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer_list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_list h3 {
+    margin-bottom: 1rem;
+}
+
+.footer_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_link:hover {
+    color: #ccc;
+}
+
+#input_group {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#input_group input {
+    padding: 0.5rem;
+    border: none;
+}
+
+#input_group button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#input_group button:hover {
+    background-color: #555;
+}
+
+/* Específicos para a página Quem Somos */
+.quemSomosBackground {
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 .container {
@@ -27,30 +131,33 @@ body.quemSomosBackground {
 }
 
 .history {
-    width: 90%;
-    background-color: #74384d;
-    padding: 20px;
-    border: 2px solid #74384d;
-    border-radius: 8px;
-    text-align: justify;
+    line-height: 1.6;
 }
 
 .history section {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-/* Responsividade */
-@media screen and (max-width: 320px) {
-    .container {
-        padding: 10px;
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
     }
 
-    .history {
-        width: 100%;
-        padding: 10px;
+    .nav-list {
+        flex-direction: column;
+        display: none;
     }
 
-    .history section {
-        font-size: 14px;
+    .nav-list.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #footer_content {
+        flex-direction: column;
     }
 }

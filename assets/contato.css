@@ -1,109 +1,145 @@
-* {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-  }
-
-.back02 {
-    background-image: url(/img/backcontact.jpg);
-    background-color: #8e3051;
-    background-repeat: no-repeat;
-    background-size: cover;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #202020;
 }
-
+.back02{
+  background-image: url(/img/backcontact.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 section{
-    position: relative;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 45px;
-    background: #1d1d2e;
-    width: 500px;
-    height: 650px;
-    margin-top: 1%;
-    margin-left: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 44px, rgba(0, 0, 0, 0.3) 0px 7px 133px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+  background: #1d1d2e;
+  width: 500px;
+  height: 680px;
+  margin-top: 1%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 44px, rgba(0, 0, 0, 0.3) 0px 7px 133px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-  section h2{
-    color: #f5f5f5;
-    font-size: 2.5rem;
-    margin: 2rem;
-  }
-  section form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  form.contato label{
-    color: #f5f5f5;
-    font-size: 12px;
-    margin-bottom: 4px;
-  }
-  form.contato input {
-    padding: 15px;
-    outline: none;
-    border: 0;
-    margin-bottom: 25px;
-    font-size: 15px;
-    transition: all 0.5s;
-    border-radius: 6px;
-  }
-  form.contato input:focus{
-    border-radius: 9px;
-    transition: all ease 1s;
-  }
-  form.contato textarea{
-    padding: 10px;
-    outline: none;
-    border: 0;
-    font-size: 15px;
-    margin-bottom: 30px;
-    border-radius: 6px;
-    transition: all 0.5s;
-  }
-  form.contato textarea:focus{
-    border-radius: 9px;
-    transition: all ease 1s;
-  }
-  form.contato button{
-    padding: 15px;
-    cursor: pointer;
-    font-size: 15px;
-    background: transparent;
-    border: 2px solid #f5f5f5;
-    color: #f5f5f5;
-    transition: all 1s;
-    margin-bottom: 20px;
-    border-radius: 5px;
-  }
-  form.contato button:hover{
-    background: #660303;
-    color: #fefeff;
-    border-radius: 5px;
-    transition: all ease 0.5s;
-  }
-  /* inicio botoes contato */
-  .botao_form {
-    display: flex;
-    gap: 30px;
-    justify-content:space-around;
-    text-align: center;
-    align-items: center;
-  }
-  .btn_retornar:hover{  
-    transition: 0.9s;
-    color:#0e0d0d;
-    align-items: center;
-    text-align: center;  
-  }
-  .btn_retornar a{
-    color:#f9f9f9; 
-    text-decoration: none;
-    text-align: start;
-    text-align: center;  
-  }
+section h2{
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+section form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form.contato label{
+  color: #f5f5f5;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+label{
+  margin-bottom: .05rem;
+  position: relative;
+   
+}
+
+form.contato input{
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+  transition: all 0.5s;
+  border-radius: 6px;
+}
+form.contato input:focus{
+  border-radius: 9px;
+  transition: all ease 1s;
+}
+.helper-text {
+  /*mensagem de erro*/
+  display: none;
+  font-size: .8rem;
+  color: rgb(7, 139, 0);
+  padding: 10px;
+}
+.required-popup::after{
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;   
+} 
+input.error, textarea.error{
+  background-color: #ee4c4c;
+  border: solid 2px #992020;
+  color: #fdfdfd;
+}
+input.correct,textarea.correct{
+  background-color: #4fab4f;
+  border: solid 2px #206620;
+  color: #fdfdfd;
+}
+.visible{
+  display: block;
+}
+form.contato textarea{
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;   
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+form.contato textarea:focus{
+  border-radius: 9px;
+  transition: all ease 1s;
+}
+form.contato button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  transition: all 1s;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+form.contato button:hover{
+  background: #660303;
+  color: #fefeff;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+/* inicio botoes contato */
+.botao_form {
+  display: flex;
+  gap: 30px;
+  justify-content:space-around;
+  text-align: center;
+  align-items: center;
+}
+.btn_retornar:hover{  
+  transition: 0.9s;
+  color:#0e0d0d;
+  align-items: center;
+  text-align: center;  
+}
+.btn_retornar a{
+  color:#f9f9f9; 
+  text-decoration: none;
+  text-align: start;
+  text-align: center;  
+}

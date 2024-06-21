@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<!-- SE ATENTEM PARA QUE AQUI SEMPRE SEJA pt-BR, PESSOAL! -->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout - Vinícola</title>
     <link rel="stylesheet" href="assets/checkout.css"> <!-- Importa o arquivo CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <nav class="nav">
+          <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
+          <button class="hamburger"></button>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>          
+            <li><form action="#" method="post">           
+              <label for="search-input" class="search-icon">
+                <img  class="lupa"src="img/lupa.svg" alt="Uma lupa">
+              </label>        
+              <input type="text" class="search-input" id="search-input" required />
+            </form>
+            </li>
+            <li>
+              <a href="carrinho.html" ><img class="icon" src="img/carrinho.svg" alt=""></a> <!--fatima colocou o link para redirecionar para carrinho-->
+            </li>
+            <li>
+              <a href="#" ><img class="icon" src="img/coração.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="./usuario.html" ><img class="icon" src="img/login.svg" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+      </header> 
     <div class="container">
         <!-- Detalhes do Faturamento -->
         <div class="details">
@@ -15,9 +45,6 @@
             <p>Nome: João da Silva</p>
             <p>E-mail: joao@example.com</p>
         </div>
-        
-        <!-- TAG SOBRANDO? SE FOR PRA ESPAÇAR, SUGIRO FAZERMOS ISSO COM CSS. -->
-        <hr>
         
         <!-- Itens do Carrinho (Produtos da Vinícola) -->
         <div>
@@ -48,8 +75,6 @@
             </table>
         </div>
         
-        <hr>
-        
         <!-- Detalhes de Entrega -->
         <div class="details">
             <h3>Detalhes de Entrega</h3>
@@ -58,8 +83,7 @@
             <p>Estado: SP</p>
             <p>CEP: 12345-678</p>
         </div>
-        
-        <hr>
+    
         
         <!-- Cálculo de Frete, Subtotal e Total -->
         <div>
@@ -69,12 +93,11 @@
             <h2>Total: R$ 729,00</h2>
         </div>
         
-        <hr>
         
-        <!-- Formulário de Pagamento (a ser implementado) -->
+        
         <div class="details">
             <h3>Forma de Pagamento</h3>
-            <form action="/processar-pagamento" method="post">
+            <form id="paymentForm" action="/processar-pagamento" method="post">
                 <label for="cartao">Número do Cartão de Crédito:</label>
                 <input type="text" id="cartao" name="cartao" required><br><br>
                 
@@ -87,14 +110,9 @@
                 <input type="submit" value="Finalizar Compra">
             </form>
         </div>
-        
-        <!-- Botão "Voltar para o Carrinho" -->
-        <a href="carrinho.html" class="btn-back">Voltar para o Carrinho</a>
     </div>
 
-    <!-- Logo no canto superior direito -->
-    <a href="perfilusuario" class="logo-link">
-        <img src="img/login.svg" alt="Logo da Vinícola" class="logo">
-    </a>
+     <!-- Integração do arquivo JavaScript -->
+     <script src="./scripts.js"></script>
 </body>
 </html>

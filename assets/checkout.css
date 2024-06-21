@@ -1,7 +1,6 @@
 body {
-    /* Aplica um degradê de cores vermelhas como fundo da página */
-    background-image: linear-gradient(to bottom, #800020, #c90038);
-    color: #fff; /* Cor do texto */
+    background-color: #fff;
+    color: #000; /* Cor do texto */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -13,7 +12,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative; /* Define posição relativa para permitir posicionamento absoluto do botão */
+    position: relative; 
 }
 
 h2 {
@@ -32,7 +31,7 @@ table, th, td {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="submit"] {
-    width: 100%;
+    width: cal(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -41,11 +40,16 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="submit"]
 }
 
 .details {
-    background-color: #800020; /* Vermelho cor de vinho para detalhes de faturamento e pagamento */
-    color: #fff;
-    padding: 10px;
+    background-color: #ddd;
+    color: #000;
+    padding: 20px;
     margin-bottom: 10px;
     border-radius: 4px;
+    margin-top: 25px;
+}
+
+.container > div:not(:first-child) {
+    margin-top: 20px; 
 }
 
 /* Estilo para o botão "Finalizar Compra" */
@@ -66,37 +70,5 @@ input[type="submit"]:hover {
     background-color: #007bff; /* Cor de fundo azul quando hover */
 }
 
-/* Estilo para o botão "Voltar para o Carrinho" */
-.btn-back {
-    position: fixed;
-    top: 20px; /* Distância do topo da janela */
-    left: 20px; /* Distância da margem esquerda */
-    padding: 10px 20px;
-    background-color: #007bff; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto */
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 4px;
-    z-index: 999; /* Define a camada de sobreposição */
-}
-
-/* Estilo para o botão "Voltar para o Carrinho" quando hover */
-.btn-back:hover {
-    background-color: #0056b3; /* Cor de fundo azul mais escura quando hover */
-}
-
-/* Estilo para a logo no canto superior direito */
-.logo-link {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 35px; /* Defina a largura desejada para a logo */
-    height: auto;
-    border-radius: 50%; /* Para uma forma circular, se necessário */
-}
 
 
-.logo {
-    width: 35px; /* Defina a largura desejada para a logo */
-    height: auto;
-    border-radius: 50%; /* Para uma forma circular, se necessário */
-}

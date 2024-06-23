@@ -42,7 +42,6 @@ fieldset {
 legend {
     font-size: 2rem;
     font-weight: bold;
-    background: #c2c2c2;
 }
 
 label:not([for="Casado"], [for="Solteiro"]) {

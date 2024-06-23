@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - Vinícola</title>
-    <link rel="stylesheet" href="assets/checkout.css"> <!-- Importa o arquivo CSS externo -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <script src="./scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Vinícola</title>
+  <link rel="stylesheet" href="assets/checkout.css"> <!-- Importa o arquivo CSS externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="./scripts/index.js" defer></script>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="nav">
-          <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
-          <button class="hamburger"></button>
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="quem-somos.html">Quem Somos</a></li>          
-            <li><form action="#" method="post">           
-              <label for="search-input" class="search-icon">
-                <img  class="lupa"src="img/lupa.svg" alt="Uma lupa">
-              </label>        
-              <input type="text" class="search-input" id="search-input" required />
-            </form>
-            </li>
-            <li>
-              <a href="carrinho.html" ><img class="icon" src="img/carrinho.svg" alt=""></a> <!--fatima colocou o link para redirecionar para carrinho-->
-            </li>
-            <li>
-              <a href="#" ><img class="icon" src="img/coração.svg" alt=""></a>
-            </li>
-            <li>
-              <a href="./usuario.html" ><img class="icon" src="img/login.svg" alt=""></a>
-            </li>
-          </ul>
-        </nav>
-      </header> 
-    <div class="container">
-        <!-- Detalhes do Faturamento -->
-        <div class="details">
-            <h3>Detalhes do Faturamento</h3>
-            <p>Nome: João da Silva</p>
-            <p>E-mail: joao@example.com</p>
-        </div>
-        
-        <!-- Itens do Carrinho (Produtos da Vinícola) -->
-        <div>
-            <h3>Itens do Carrinho</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome do Produto</th>
-                        <th>Quantidade</th>
-                        <th>Valor Unitário</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cabernet Sauvignon</td>
-                        <td>2 garrafas</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 300,00</td>
-                    </tr>
-                    <tr>
-                        <td>Pinot Noir</td>
-                        <td>2 garrafas</td>
-                        <td>R$ 170,00</td>
-                        <td>R$ 340,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <!-- Detalhes de Entrega -->
-        <div class="details">
-            <h3>Detalhes de Entrega</h3>
-            <p>Endereço: Rua das Vinhas, 123</p>
-            <p>Cidade: Vinhedo</p>
-            <p>Estado: SP</p>
-            <p>CEP: 12345-678</p>
-        </div>
-    
-        
-        <!-- Cálculo de Frete, Subtotal e Total -->
-        <div>
-            <h3>Resumo do Pedido</h3>
-            <p>Subtotal: R$ 640,00</p>
-            <p>Frete: R$ 89,00</p>
-            <h2>Total: R$ 729,00</h2>
-        </div>
-        
-        
-        
-        <div class="details">
-            <h3>Forma de Pagamento</h3>
-            <form id="paymentForm" action="/processar-pagamento" method="post">
-                <label for="cartao">Número do Cartão de Crédito:</label>
-                <input type="text" id="cartao" name="cartao" required><br><br>
-                
-                <label for="validade">Validade:</label>
-                <input type="text" id="validade" name="validade" placeholder="MM/AA" required><br><br>
-                
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required><br><br>
-                
-                <input type="submit" value="Finalizar Compra">
-            </form>
-        </div>
+  <header class="header">
+    <nav class="nav">
+      <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li>
+          <form action="#" method="post">
+            <label for="search-input" class="search-icon">
+              <img class="lupa" src="img/lupa.svg" alt="Uma lupa">
+            </label>
+            <input type="text" class="search-input" id="search-input" required />
+          </form>
+        </li>
+        <li>
+          <a href="carrinho.html"><img class="icon" src="img/carrinho.svg" alt=""></a>
+          <!--fatima colocou o link para redirecionar para carrinho-->
+        </li>
+        <li>
+          <a href="#"><img class="icon" src="img/coração.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="./usuario.html"><img class="icon" src="img/login.svg" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Detalhes do Faturamento -->
+    <div class="details">
+      <h3>Detalhes do Faturamento</h3>
+      <p>Nome: João da Silva</p>
+      <p>E-mail: joao@example.com</p>
     </div>
 
-     <!-- Integração do arquivo JavaScript -->
-     <script src="./scripts.js"></script>
+    <!-- Itens do Carrinho (Produtos da Vinícola) -->
+    <div>
+      <h3>Itens do Carrinho</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Produto</th>
+            <th>Quantidade</th>
+            <th>Valor Unitário</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cabernet Sauvignon</td>
+            <td>2 garrafas</td>
+            <td>R$ 150,00</td>
+            <td>R$ 300,00</td>
+          </tr>
+          <tr>
+            <td>Pinot Noir</td>
+            <td>2 garrafas</td>
+            <td>R$ 170,00</td>
+            <td>R$ 340,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Detalhes de Entrega -->
+    <div class="details">
+      <h3>Detalhes de Entrega</h3>
+      <p>Endereço: Rua das Vinhas, 123</p>
+      <p>Cidade: Vinhedo</p>
+      <p>Estado: SP</p>
+      <p>CEP: 12345-678</p>
+    </div>
+
+
+    <!-- Cálculo de Frete, Subtotal e Total -->
+    <div>
+      <h3>Resumo do Pedido</h3>
+      <p>Subtotal: R$ 640,00</p>
+      <p>Frete: R$ 89,00</p>
+      <h2>Total: R$ 729,00</h2>
+    </div>
+
+
+
+    <div class="details">
+      <h3>Forma de Pagamento</h3>
+      <form id="paymentForm" action="/processar-pagamento" method="post">
+        <label for="cartao">Número do Cartão de Crédito:</label>
+        <input type="text" id="cartao" name="cartao" required><br><br>
+
+        <label for="validade">Validade:</label>
+        <input type="text" id="validade" name="validade" placeholder="MM/AA" required><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+        <input type="submit" value="Finalizar Compra">
+      </form>
+    </div>
+  </div>
+
+  <!-- Integração do arquivo JavaScript -->
+  <script src="./scripts.js"></script>
 </body>
+
 </html>

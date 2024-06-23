@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="assets/carrinho.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- VERIFIQUEM OS APONTAMENTOS FEITOS NA PÁGINA DE PRODUTOS QUANTO AO HEADER, POR FAVOR. -->
     <header class="header">
@@ -19,14 +23,14 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>          
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li>
-                        <form action="#" method="post">           
+                        <form action="#" method="post">
                             <label for="search-input" class="search-icon">
-                            <img  class="lupa"src="img/lupa.svg" alt="Uma lupa"></label>        
+                                <img class="lupa" src="img/lupa.svg" alt="Uma lupa"></label>
                             <input type="text" class="search-input" id="search-input" required />
                         </form>
-                    </li>               
+                    </li>
                     <!--retirei o carrinho do header, pois não faz sentido ter carrinho na pagina de carrinho-->
                     <li>
                         <a href="#">
@@ -49,7 +53,7 @@
             <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
             <section>
                 <table>
-                    <thead> 
+                    <thead>
                         <tr>
                             <th>Produto</th>
                             <th>Preço</th>
@@ -57,88 +61,95 @@
                             <th>Total</th>
                         </tr>
                     </thead>
-                <tbody> <!--agrupa o conteudo do corpo na tabela-->
-                    <tr>   <!--adicionando o produto-->
-                        <td>
-                            <div class="product">
-                                <img src="img/item do carrinho - cabernet sauvignon 2.jpg" alt="vinho tinto">
-                                <div class="Info">
-                                    <p class="name">Cabernet Sauvignon</p>
-                                    <p class="category">Vinho tinto</p>
+                    <tbody>
+                        <!--agrupa o conteudo do corpo na tabela-->
+                        <tr>
+                            <!--adicionando o produto-->
+                            <td>
+                                <div class="product">
+                                    <img src="img/item do carrinho - cabernet sauvignon 2.jpg" alt="vinho tinto">
+                                    <div class="Info">
+                                        <p class="name">Cabernet Sauvignon</p>
+                                        <p class="category">Vinho tinto</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>R$ 150</td>
-                        <td>
-                            <div class="qty">
-                                <button>
-                                    <i class='bx bx-minus'></i>
-                                </button>
-                                <span>2</span>
-                                <button>
-                                    <i class='bx bx-plus'></i>
-                                </button>
-                            </div>
-                        </td>
-                        <td>R$ 300</td>
-                        <td>
-                            <button class="delete">
-                             <i class='bx bx-x'></i>
-                            </button>
-                        </td>
-                    </tr> <!--acabando a seção do primeiro produto-->
-
-                    <tr>     <!--adicionando outro produto-->
-                        <td>
-                            <div class="product">    <!--engloba a imagem o titulo a quantidade e categoria-->
-                                <img src="img/item do carrinho -Pinot Noir 2.jpg" alt="vinho tinto">
-                                <div class="Info">
-                                    <p class="name">Pinot Noir</p>
-                                    <p class="category">Vinho tinto</p>
+                            </td>
+                            <td>R$ 150</td>
+                            <td>
+                                <div class="qty">
+                                    <button>
+                                        <i class='bx bx-minus'></i>
+                                    </button>
+                                    <span>2</span>
+                                    <button>
+                                        <i class='bx bx-plus'></i>
+                                    </button>
                                 </div>
-                            </div>
-                        </td>
-                        <td>R$ 170</td>
-                        <td>
-                            <div class="qty">
-                                <button>
-                                    <i class='bx bx-minus'></i>
+                            </td>
+                            <td>R$ 300</td>
+                            <td>
+                                <button class="delete">
+                                    <i class='bx bx-x'></i>
                                 </button>
-                                <span>2</span>
-                                <button>
-                                    <i class='bx bx-plus'></i>
-                                </button>
-                            </div>
-                        </td>
-                        <td>R$ 340</td>
-                        <td>
-                            <button class="delete">
-                                <i class='bx bx-x'></i>
-                            </button>
-                        </td>
-                    </tr>                 
-                </tbody>             
-            </table>
-         </section>
+                            </td>
+                        </tr>
+                        <!--acabando a seção do primeiro produto-->
 
-         <aside> <!--separando o conteudo com aside, bloco com resumo da compra-->
-            <div class="box"> <!--Caixa de resumo das compras-->
-                <h2>Resumo das compras</h2>
-                <div class="res">
-                    <span>Sub-Total</span>
-                    <span>R$ 640</span>
+                        <tr>
+                            <!--adicionando outro produto-->
+                            <td>
+                                <div class="product">
+                                    <!--engloba a imagem o titulo a quantidade e categoria-->
+                                    <img src="img/item do carrinho -Pinot Noir 2.jpg" alt="vinho tinto">
+                                    <div class="Info">
+                                        <p class="name">Pinot Noir</p>
+                                        <p class="category">Vinho tinto</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$ 170</td>
+                            <td>
+                                <div class="qty">
+                                    <button>
+                                        <i class='bx bx-minus'></i>
+                                    </button>
+                                    <span>2</span>
+                                    <button>
+                                        <i class='bx bx-plus'></i>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>R$ 340</td>
+                            <td>
+                                <button class="delete">
+                                    <i class='bx bx-x'></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <aside>
+                <!--separando o conteudo com aside, bloco com resumo da compra-->
+                <div class="box">
+                    <!--Caixa de resumo das compras-->
+                    <h2>Resumo das compras</h2>
+                    <div class="res">
+                        <span>Sub-Total</span>
+                        <span>R$ 640</span>
+                    </div>
+                    <div class="frete">
+                        <span>Frete</span>
+                        <span class="green">Gratuito</span>
+                    </div>
                 </div>
-                <div class="frete">
-                    <span>Frete</span>
-                    <span class="green">Gratuito</span>
+                <div class="total">
+                    <span>Total </span>
+                    <span class="valor">R$ 640</span>
                 </div>
-            </div>
-           <div class="total">
-            <span>Total </span>
-            <span class="valor">R$ 640</span>
-           </div>
-           <button><a href="checkout.html">Finalizar Compra</button></a>
-         </aside>
+                <button><a href="checkout.html">Finalizar Compra</button></a>
+            </aside>
         </div>
     </main>
 
@@ -232,4 +243,5 @@
 
     <script src="scripts/carrinho.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,34 @@
     <script src="./scripts/contato.js" defer></script>
     <title>Contato</title>
 </head>
+
 <body class="back02">
     <section>
         <h2>Contato</h2>
         <form class="contato" action="https://api.staticforms.xyz/submit" method="post">
-    
-    <label for="username">* Nome:</label>
-    <input type="text" id="username" name="username" placeholder="Digite seu nome">
-    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
-    
-    <label for="email">* E-mail:</label>
-    <input type="email" id="email" name="email"  placeholder="Digite seu e-mail">
-    <p id="email-helper" class="helper-text ">Mensagem de ajuda</p>
+
+            <label for="username">* Nome:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome">
+            <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <label for="email">* E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            <p id="email-helper" class="helper-text ">Mensagem de ajuda</p>
 
 
-    <label for="mensage">* Mensagem</label>
-    <textarea id="mensage" name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-    <p id="mensage-helper" class="helper-text">Mensagem de ajuda</p>
+            <label for="mensage">* Mensagem</label>
+            <textarea id="mensage" name="message" cols="30" rows="10" placeholder="Digite sua mensagem"
+                required></textarea>
+            <p id="mensage-helper" class="helper-text">Mensagem de ajuda</p>
             <div class="botao_form">
                 <button type="submit" class="btn_enviar">Enviar</button>
-                <button type="reset"  class="btn_limpar">Limpar</button>
-                <button class="btn_retornar" > <a href="index.html">Retornar</a></button>   
+                <button type="reset" class="btn_limpar">Limpar</button>
+                <button class="btn_retornar"> <a href="index.html">Retornar</a></button>
             </div>
             <input type="hidden" name="accessKey" value="55da8b91-1c8c-40f3-a2dd-b9a7bcc73f57">
             <input type="hidden" name="redirectTo" value="http://127.0.0.1:5504/agradecimento.html">
         </form>
     </section>
 </body>
+
 </html>

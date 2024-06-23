@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/quem-somos.css">
     <script src="./scripts/index.js" defer></script>
-    <title>Wine - Red and White</title>
+    <title>Quem somos - Red and White</title>
   </head>
   <body class="back01">
     <header class="header">
@@ -38,10 +39,8 @@
       </nav>
     </header>    
     </header>
-    <main class="container">
-      <h1>Quem Somos</h1><br><br>
-      <article class="history">
-        <section>
+    <main class="container01">
+        <h1>Quem Somos</h1>
           <p>
             Desde 1900, a Wine Red & White tem sido sinônimo de qualidade e
             tradição no mundo vinícola. O nosso nome é reconhecido em diversos
@@ -49,8 +48,6 @@
             história começa com a nossa família, unida pelo amor à terra e pela
             paixão por criar vinhos de excelência.
           </p>
-        </section>
-        <section>
           <p>
             Ao longo de mais de um século, mantivemos viva a tradição familiar
             de produzir vinhos extraordinários. Cada membro da nossa família
@@ -58,8 +55,6 @@
             meticuloso das vinhas até à arte da vinificação. Esta união e
             compromisso familiar são a essência dos nossos vinhos.
           </p>
-        </section>
-        <section>
           <p>
             A nossa reputação internacional é construída sobre a base sólida de
             práticas sustentáveis, inovação e respeito pelas tradições
@@ -67,129 +62,111 @@
             ideais, e utilizamos técnicas aperfeiçoadas ao longo dos anos para
             garantir que cada garrafa que produzimos seja de qualidade superior.
           </p>
-        </section>
-        <section>
           <p>
             O nosso portfólio de vinhos é diversificado, refletindo a riqueza e
             a diversidade dos nossos vinhedos. Seja um tinto encorpado ou um
             branco refrescante, cada vinho da Wine Red & White é uma celebração
             da nossa herança e do nosso compromisso com a excelência.
           </p>
-        </section>
-        <section>
           <p>
             Estamos orgulhosos da nossa história e ansiosos para partilhar os
             nossos vinhos consigo. Experimente a tradição e a qualidade que nos
             tornaram uma referência no mundo vinícola e descubra porque somos a
             escolha preferida de amantes de vinho em todo o mundo.
           </p>
-        </section>
-        <section>
           <p>
             Venha fazer parte da nossa história e permita-nos tornar os seus
             momentos ainda mais especiais com os nossos vinhos excepcionais.
             Junte-se à Wine Red & White e brinde connosco à paixão, à família e
             à excelência.
           </p>
-        </section>
-      </article>
     </main>
     <footer>
+      <!-- SUGIRO SUBSTITUIR DIV POR SECTION AQUI ABAIXO. -->
       <div id="footer_content">
-        <div id="footer_contacts">
-          <img
-            class="logo_redonda"
-            src="img/logo_redonda.png"
-            alt="Logotipo redondo"
-          />
-          <h3>Nossos Canais</h3>
-          <div id="footer_social_media">
-            <a
-              href="#"
-              class="footer_link"
-              id="instagram"
-              aria-label="Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="footer_link" id="facebook" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="footer_link" id="whatsapp" aria-label="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a
-              href="img/Anotação 2024-05-10 111118.png"
-              class="footer_link"
-              aria-label="Proibido para menores de idade"
-            >
-              <img
-                id="menor_idade"
-                src="img/menor_idade.png"
-                alt="Proibido para menores de idade"
-              />
-            </a>
+          <section id="footer_contacts">
+              <img class="logo_redonda" src="./img/logo_redonda.png" alt="logo">
+              <h3>Nossos Canais</h3>
+              <!-- PODEM UTILIZAR LI AQUI TAMBÉM EM VEZ DE DIV! -->
+              <div id="footer_social_media">
+                  <a href="#" class="footer_link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="footer_link" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="footer_link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="img/Anotação 2024-05-10 111118.png" class="footer_link" id="">
+                      <img id="menor_idade" src="img/menor_idade.png" alt="">
+                  </a>
+              </div>
+          </section>
+          <ul class="footer_list">
+              <li>
+                  <h3>Vinhos</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Vinhos Tintos</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Vinhos Brancos</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Vinhos Rosés</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Vinhos Espumantes</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Champagnes</a>
+              </li>
+          </ul>
+          <ul class="footer_list">
+              <li>
+                  <h3>Produtores</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Thibault Liger-Belair</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Stella di Campalto</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Régis & Sylvain</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Domaine Jean Fournier</a>
+              </li>
+              <li>
+                  <a href="#" class="footer_link">Domaine Pfister</a>
+              </li>
+              <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
+          </ul>
+          <div class="footer_subscribe">
+              <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
+              <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
+              <p><a href="conosco.html" class="footer_link">Trabalhe conosco</a></p>
+
+
+              <!-- INCLUIR A TAG FORM PARA ENGLOBAR ESSE INPUT. TAMBÉM SUBSTITUIR O BUTTON POR UM INPUT DO TIPO SUBMIT. -->
+              <!-- NESSE CASO, TAMBÉM ACREDITO QUE NÃO HAJA NECESSIDADE DESSA DIV AQUI ABAIXO. -->
+              <div id="input_group">
+                  <input type="email" name="" id="email">
+                  <button>
+                      <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
           </div>
-        </div>
-        <ul class="footer_list">
-          <li>
-            <h3>Vinhos</h3>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Vinhos Tintos</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Vinhos Brancos</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Vinhos Rosés</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Vinhos Espumantes</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Champagnes</a>
-          </li>
-        </ul>
-        <ul class="footer_list">
-          <li>
-            <h3>Produtores</h3>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Thibault Liger-Belair</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Stella di Campalto</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Régis & Sylvain</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Domaine Jean Fournier</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">Domaine Pfister</a>
-          </li>
-        </ul>
-        <div class="footer_subscribe">
-          <h3>Alguma Dúvida?<br />Como podemos ajudar você?</h3>
-          <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
-          <p><a href="conosco.html" class="footer_link">Trabalhe conosco</a></p>
-          <div id="input_group">
-            <input type="email" name="" id="email" placeholder="Seu email" />
-            <button>
-              <i class="fa-regular fa-envelope"></i>
-            </button>
-          </div>
-        </div>
+
       </div>
+      <!-- PREFIRAM USAR CLASSES DO QUE IDS, PESSOAL! -->
       <div class="footer_copyright">
-        &#169; Grupo 02 - Red&White Todos os Direitos Reservados <br />
-        <img
-          src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png"
-          alt="Etiqueta proibido bebida para menor"
-        />
+          &#169
+          Grupo 02 - Red&White Todos os Direitos Reservados <br>
+          <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
       </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>

@@ -155,15 +155,30 @@ h5{
   
 }
 
-/* inicio form contato */
+/* inicio quem somos */
+.container01 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #613142;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-neutral-40);
+  gap: 25px;
+  border: 1px solid var(--color-neutral-40);
+  margin: 50px;
+  padding: 100px 50px;
+  border-radius: 12px;
+  padding-top: 50px;
+}
+
+.container01 h1{
+  margin: 0;
+  padding: 0;
+}
 
 /*Página do Obrigado*/
 main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; 
-  flex-direction: column;
+  
 }
 .text{
   font-size: 45px;

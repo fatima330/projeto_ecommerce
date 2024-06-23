@@ -3,73 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="assets/quem-somos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css" />
     <script src="./scripts/index.js" defer></script>
-    <title>Quem Somos - Wine Red and White</title>
+    <title>Wine - Red and White</title>
   </head>
-  <body class="quemSomosBackground">
+  <body class="back01">
     <header class="header">
       <nav class="nav">
-        <img
-          class="logo"
-          src="img/logo.png"
-          alt="Garrafa de vinho e uma taça - Logotipo"
-        />
-        <button class="hamburger" aria-label="Abrir menu de navegação">
-          <i class="fa fa-bars"></i>
-        </button>
+        <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
+        <button class="hamburger"></button>
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="quem-somos.html">Quem Somos</a></li>
-          <li>
-            <form action="#" method="post">
-              <label for="search-input" class="search-icon">
-                <img class="lupa" src="img/lupa.svg" alt="Ícone de busca" />
-              </label>
-              <input
-                type="text"
-                class="search-input"
-                id="search-input"
-                placeholder="Pesquisar..."
-                required
-              />
-              <button type="submit" aria-label="Buscar">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
+          <li><a href="quem-somos.html">Quem Somos</a></li>          
+          <li><form action="#" method="post">           
+            <label for="search-input" class="search-icon">
+              <img  class="lupa"src="img/lupa.svg" alt="Uma lupa">
+            </label>        
+            <input type="text" class="search-input" id="search-input" required />
+          </form>
           </li>
           <li>
-            <a href="carrinho.html" aria-label="Carrinho de compras"
-              ><img
-                class="icon"
-                src="img/carrinho.svg"
-                alt="Carrinho de compras"
-            /></a>
+            <a href="carrinho.html" ><img class="icon" src="img/carrinho.svg" alt=""></a> <!--fatima colocou o link para redirecionar para carrinho-->
           </li>
           <li>
-            <a href="#" aria-label="Favoritos"
-              ><img
-                class="icon"
-                src="img/coração.svg"
-                alt="Coração - Favoritos"
-            /></a>
+            <a href="#" ><img class="icon" src="img/coração.svg" alt=""></a>
           </li>
           <li>
-            <a href="./usuario.html" aria-label="Login do usuário"
-              ><img class="icon" src="img/login.svg" alt="Ícone de login"
-            /></a>
+            <a href="./usuario.html" ><img class="icon" src="img/login.svg" alt=""></a>
           </li>
         </ul>
       </nav>
+    </header>    
     </header>
     <main class="container">
       <h1>Quem Somos</h1><br><br>

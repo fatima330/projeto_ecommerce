@@ -151,6 +151,21 @@ h5 {
   margin: 30px;
 }
 
+/* inicio quem somos */
+.container01 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  color: var(--color-neutral-40);
+  background-color: #613142;
+  border: 1px solid var(--color-neutral-40);
+  border-radius: 12px;
+  padding: 50px 50px 100px;
+  margin: 50px;
+}
+
 /*Página do Obrigado*/
 .main {
   display: flex;

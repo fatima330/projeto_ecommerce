@@ -4,7 +4,7 @@
   --color-neutral-0: #0e0c0c;
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
-  --color-neutral-40: var(--color-neutral-40);
+  --color-neutral-40: #f5f5f5;
 }
 
 * {
@@ -30,53 +30,68 @@ a {
   margin-top: 30px;
   background: #20080be9;
   padding-right: 30px;
-  /* para afastar o icone de hamburguer em tela reduzida */
+  /* para afastar o icone de hamburguer  em tela reduzida */
 }
 
 .nav {
   width: 100%;
   height: 90px;
+  margin-inline: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
+  height: 150px;
+  /*altura da logo */
   border-radius: 0px 15px 15px 0px;
+  left: 0;
 }
 
 .icon {
+  margin-top: 10%;
   height: 35px;
   /*altura da logo */
+  align-items: center;
+  justify-content: center;
+  display: flex;
   border: none;
 }
 
 h5 {
   /* texto da index */
+  color: rgb(255, 255, 255);
   font-size: 30px;
-  color: var(--color-neutral-40);
+  height: 50%;
+  width: 50%;
+  position: relative;
 }
 
 .nav-list {
-  width: 100%;
+  width: 90%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  gap: 32px;
   /* Espaço entre os intens da menu */
   list-style: none;
+  align-items: center;
+  justify-content: space-around;
   margin-left: 30px;
-  /* Espaço entre a logo, a home e os itens da menu */
+  /* Espaço entre  a log e a home os intens da menu */
 }
 
 .nav-list a {
   font-size: 22px;
-  color: var(--color-neutral-40);
+  color: #fff;
   transition: all 0.3s ease;
 }
 
 .nav-list a:hover {
-  color: var(--color-neutral-30);
+  color: #a8a29e;
+}
+
+.hero {
+  height: calc(100vh - 70px);
 }
 
 .hamburger {
@@ -90,12 +105,12 @@ h5 {
 .hamburger::after,
 .hamburger::before {
   content: "";
-  position: relative;
   display: block;
   width: 30px;
   height: 3px;
   background: #eae4e4;
   margin-top: 5px;
+  position: relative;
   transition: all 0.3s ease;
 }
 
@@ -103,6 +118,7 @@ h5 {
   /* posição da lupa */
   position: absolute;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .lupa {
@@ -113,18 +129,17 @@ h5 {
 }
 
 .search-input {
-  max-width: 250px;
-  width: 100%;
+  width: 250px;
   height: 30px;
-  font-size: 20px;
-  color: var(--color-neutral-40);
+  border-radius: 10px;
   border: none;
   outline: none;
-  background-color: #110303e9;
-  border-radius: 8px;
   padding-left: 40px;
   /* onde o cursor começa na busca */
   transition: all 0.3s ease;
+  background-color: #110303e9;
+  color: white;
+  font-size: 20px;
 }
 
 .search-input:hover {
@@ -137,58 +152,43 @@ h5 {
 }
 
 .welcome {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  color: var(--color-neutral-40);
-  border: 2px solid var(--color-neutral-40);
-  border-radius: 15px;
-  background-color: #20080be9;
   padding: 20px;
   margin: 30px;
+  gap: 40px;
+  color: #ffffff;
+  border: 2px solid #fff;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #20080be9;
 }
 
+/* inicio form contato */
+
 /*Página do Obrigado*/
-.main {
+main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   min-height: 100vh;
-  background: #101026;
+  flex-direction: column;
 }
 
 .text {
-  font-size: 44px;
-  color: var(--color-neutral-40);
+  font-size: 45px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
 }
 
 .paragrafo {
-  color: var(--color-neutral-40);
-  margin-bottom: 20px;
+  color: #f5f5f5;
+  margin-bottom: 50px;
 }
 
-.btn {
-  max-width: 250px;
-  width: 100%;
-  font-size: 18px;
-  color: #101026;
-  background: var(--color-neutral-40);
-  padding: 15px 0;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  border-radius: 16px;
-}
-
+/* Fim form contato */
 @media (max-width: 760px) {
   .hamburger {
     display: block;
@@ -201,16 +201,16 @@ h5 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    clip-path: circle(0px at 85% 77px);
     background: #3b0f14;
-    border-radius: 15px;
-    padding: 50px 0;
-    pointer-events: none;
+    clip-path: circle(0px at 85% 77px);
     transition: all 0.3s ease;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
     z-index: 1;
+    border-radius: 15px;
   }
 
   .nav-list a {
@@ -282,16 +282,21 @@ footer .logo_redonda {
 }
 
 #footer_content {
+  background-color: var(--color-neutral-10);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--color-neutral-10);
   padding: 3rem 3.5rem;
+}
+
+#footer_contacts p {
+  height: 30px;
 }
 
 #footer_social_media {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+
 }
 
 #footer_social_media .footer_link {
@@ -317,6 +322,7 @@ footer .logo_redonda {
 
 #footer_social_media .footer_link:hover {
   opacity: 0.8;
+
 }
 
 #instagram {
@@ -374,18 +380,19 @@ footer .logo_redonda {
 }
 
 #input_group input {
-  width: 100%;
+  all: unset;
   padding: 0.75rem;
+  width: 100%;
 }
 
 #input_group button {
-  height: 100%;
-  font-size: 1.5rem;
-  color: var(--color-neutral-40);
   background-color: #7f37c9;
-  border-radius: 0px 4px 4px 0px;
   border: none;
-  padding: 0 1rem;
+  color: var(--color-neutral-40);
+  padding: 0 1.25rem;
+  font-size: 1.5rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -399,8 +406,10 @@ footer .logo_redonda {
   justify-content: center;
   background-color: var(--color-neutral-0);
   font-size: 0.8rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
+  font-weight: 100;
 }
+
 
 @media screen and (max-width:768px) {
   #footer_content {

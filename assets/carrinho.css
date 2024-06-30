@@ -133,6 +133,8 @@ h5 {
   box-shadow: 1px 1px 5px #16030c;
 }
 
+
+
 /*aqui começa o codigo do carrinho*/
 #principal {
   color: rgb(91, 38, 37);
@@ -142,16 +144,16 @@ h5 {
 }
 
 body {
-  background-color: var(--color-neutral-40);
+  background-color: white;
 }
 
 main {
-  background: var(--color-neutral-40);
+  background: white;
   padding: 0 30px;
 
   .content {
     display: flex;
-    /*jogou a box de resumo de compras para o lado direito*/
+    /*jogou a box de resumo de compras var(--color-neutral-40)para o lado direito*/
 
     section {
       flex: 1;
@@ -164,12 +166,20 @@ table {
   width: 100%;
   /*para a tabela assumir o tamanho total*/
   border-collapse: collapse;
+}
 
-  thead {
+
+
+
+thead {
     tr {
       border-bottom: 3px solid #eae4e4;
+      }
+    }
 
-      th {
+
+
+ th {
         text-align: left;
         /*texto para a esquerda*/
         padding-bottom: 10px;
@@ -178,19 +188,17 @@ table {
         /*para deixar o texto maiusculo*/
         color: gray;
       }
-    }
-  }
 
-  tbody {
+
+tbody {
     tr {
       border-bottom: 3px solid#eae4e4;
 
       td {
-        padding: 30px 0;
+        padding: 30px 0; 
+       }
       }
     }
-  }
-}
 
 .product {
   display: flex;

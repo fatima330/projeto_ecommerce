@@ -9,6 +9,8 @@
   --color-neutral-50: #8e3051;
   --color-neutral-60: #20080be9;
   --color-neutral-70: #450017;
+  --color-neutral-80: #ff0000;
+  --color-neutral-90: #613142;
 
 
 }
@@ -20,6 +22,16 @@
   box-sizing: border-box;
 }
 
+.main_prod {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  min-height: 100vh;
+
+}
+
 .produtosbackgroud {
   background-color: var(--color-neutral-50);
   background-repeat: no-repeat;
@@ -29,7 +41,7 @@
 }
 
 .border {
-  background-color: var(--color-neutral-60);
+  background-color: var(--color-neutral-90);
   border: 2px solid var(--color-neutral-40);
   text-align: center;
   border-radius: 8px;
@@ -61,9 +73,9 @@
   flex-direction: column;
   gap: 10px;
   border: 2px solid var(--color-neutral-40);
-  background-color: var(--color-neutral-60);
+  background-color: var(--color-neutral-90);
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: right;
   color: var(--color-neutral-40);
   margin: 15px;
@@ -71,32 +83,27 @@
 }
 
 .products_list {
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1rem;
   list-style: none;
 }
 
 .click_products {
   display: block;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
   font-size: 20px;
   color: var(--color-neutral-40);
   background-color: var(--color-neutral-60);
-  border: 2px solid var(--color-neutral-70);
-  border-radius: 2%;
-  padding: 3px;
+  border-radius: 15px;
   margin: 25px;
   list-style: none;
-  transition: all 0.3s ease;
 }
 
 .click_products:hover {
-  transform: scale(1.02);
+  filter: brightness(75%);
+  transition: all 0.3s ease-in-out;
 }
 
 .center_icon {
@@ -106,13 +113,13 @@
   text-align: center;
   padding: 5px;
   margin: 10px;
-  border-radius: 3%;
+  border-radius: 15px;
 }
 
 .center_icon::after {
   content: "";
   position: absolute;
-  top: -5px;
+  top: -7px;
   left: 0;
   width: 0%;
   height: 1px;
@@ -122,6 +129,7 @@
 
 .center_icon:hover::after {
   width: 100%;
+  transition: all 0.3s ease;
 }
 
 .center_icon2 {
@@ -131,12 +139,15 @@
 
 .img_wine {
   width: 320px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border-radius: 15px;
+  background-size: cover;
 }
 
 .img_wine:hover {
-  filter: brightness(50%);
+  top: -15px;
+  position: relative;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width:320px) {

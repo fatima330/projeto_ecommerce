@@ -5,6 +5,11 @@
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #f5f5f5;
+  --color-neutral-50: #8e3051;
+  --color-neutral-60: #20080be9;
+  --color-neutral-70: #450017;
+  --color-neutral-80: #ff0000;
+  --color-neutral-90: #613142;
 }
 
 * {
@@ -28,7 +33,7 @@ a {
 
 .header {
   margin-top: 30px;
-  background: #20080be9;
+  background: var(--color-neutral-60);
   padding-right: 30px;
   /* para afastar o icone de hamburguer  em tela reduzida */
 }
@@ -61,8 +66,8 @@ a {
 
 h5 {
   /* texto da index */
-  color: rgb(255, 255, 255);
-  font-size: 30px;
+  color: var(--color-neutral-40);
+  font-size: 16px;
   height: 50%;
   width: 50%;
   position: relative;
@@ -155,26 +160,25 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin: 30px;
-  gap: 40px;
-  color: #ffffff;
-  border: 2px solid #fff;
-  position: absolute;
+  padding: 35px;
+  gap: 25px;
+  color: var(--color-neutral-40);
+  border: 2px solid var(--color-neutral-40);
   border-radius: 15px;
-  background-color: #20080be9;
+  background-color: var(--color-neutral-90);
+  font-size: 14px;
 }
 
 /* inicio form contato */
 
 /*Página do Obrigado*/
-main {
-  display: flex;
+.main_index {
+  display: block;
   align-items: center;
+  padding: 20px;
+  margin: 90px;
   justify-content: center;
-  min-height: 100vh;
-  flex-direction: column;
+  min-height: 50vh;
 }
 
 .text {

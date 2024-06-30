@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/produtos.css">
     <link rel="stylesheet" href="assets/style.css">
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/produtos.js" defer></script>
     <title>Lista de Produtos - Vinhos</title>
 
 </head>
@@ -54,8 +55,8 @@
         </div>
     </header>
     <!-- essa parte é dos produtos -->
-    <main>
-        <div class="border">
+    <main class="main_prod">
+        <!-- <div class="border">
             <h1 class="h1">Nossos produtos</h1>
             <p class="products_initial">
                 Explore a nossa seleção exclusiva de vinhos e descubra as três opções disponíveis: vinhos tintos, vinhos
@@ -65,22 +66,23 @@
                 No Wine Red & White, cada garrafa é uma experiência única. Seja qual for a sua preferência, temos o
                 vinho ideal para você. Comece sua jornada vinícola conosco hoje!
             </p>
-        </div>
+        </div> -->
+
         <ul class="products_list">
             <ul class="click_products">
                 <li><img class="img_wine" src="./img/vinho1.jpeg" alt="Vinhos Brancos" width="300"></li>
-                <li class="center_icon2">VINHOS BRANCOS</li>
-                <li class="center_icon"><span class="material-symbols-outlined">touch_app</span></li>
+                <li class="center_icon2">VINHO BRANCO</li>
+                <li class="center_icon" id="click_js"><span class="material-symbols-outlined">touch_app</span></li>
             </ul>
             <ul class="click_products">
                 <li><img class="img_wine" src="./img/vinho2.jpeg" alt="Vinhos Tintos"></li>
-                <li class="center_icon2">VINHOS TINTO</li>
-                <li class="center_icon"><span class="material-symbols-outlined">touch_app</span></li>
+                <li class="center_icon2">VINHO TINTO</li>
+                <li class="center_icon" id="click_js2"><span class="material-symbols-outlined">touch_app</span></li>
             </ul>
             <ul class="click_products">
                 <li><img class="img_wine" src="./img/vinho3.jpeg" alt="Vinhos Rosé"></li>
                 <li class="center_icon2">VINHO ROSÉ</li>
-                <li class="center_icon"><span class="material-symbols-outlined">touch_app</span></li>
+                <li class="center_icon" id="click_js3"><span class="material-symbols-outlined">touch_app</span></li>
             </ul>
         </ul>
         <div class="comments_products">

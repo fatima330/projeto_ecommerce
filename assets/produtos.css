@@ -6,6 +6,11 @@
   --color-neutral-10: #171717;
   --color-neutral-30: #a8a29e;
   --color-neutral-40: #f5f5f5;
+  --color-neutral-50: #8e3051;
+  --color-neutral-60: #20080be9;
+  --color-neutral-70: #450017;
+
+
 }
 
 * {
@@ -16,7 +21,7 @@
 }
 
 .produtosbackgroud {
-  background-color: #8e3051;
+  background-color: var(--color-neutral-50);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,7 +29,7 @@
 }
 
 .border {
-  background-color: #20080be9;
+  background-color: var(--color-neutral-60);
   border: 2px solid var(--color-neutral-40);
   text-align: center;
   border-radius: 8px;
@@ -56,7 +61,7 @@
   flex-direction: column;
   gap: 10px;
   border: 2px solid var(--color-neutral-40);
-  background-color: #20080be9;
+  background-color: var(--color-neutral-60);
   border-radius: 20px;
   font-size: 16px;
   text-align: right;
@@ -81,8 +86,8 @@
   gap: 2rem;
   font-size: 20px;
   color: var(--color-neutral-40);
-  background-color: #20080be9;
-  border: 2px solid #450017;
+  background-color: var(--color-neutral-60);
+  border: 2px solid var(--color-neutral-70);
   border-radius: 2%;
   padding: 3px;
   margin: 25px;
@@ -111,7 +116,7 @@
   left: 0;
   width: 0%;
   height: 1px;
-  background-color: #eae4e4;
+  background-color: var(--color-neutral-40);
   transition: all 0.3s ease;
 }
 

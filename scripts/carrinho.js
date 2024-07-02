@@ -1,8 +1,16 @@
-const removeProductButtons = document.getElementsByClassName("delete");
-console.log(removeProductButtons)
+const btnRemoverProduto = document.getElementsByClassName("delete");
+console.log(btnRemoverProduto)
 
-for (var i = 0; i < removeProductButtons.length; i++) {
-  removeProductButtons[i].addEventListener("click", function() {
+for (var i = 0; i <btnRemoverProduto.length; i++) {
+  btnRemoverProduto[i].addEventListener("click", function() {
     event.target.parentElement.parentElement.remove()
   })
 }
+
+const btnSubtrairProduto = document.getElementsByClassName("bx bx-minus");
+console.log(btnSubtrairProduto)
+
+const btnAdicionarProduto = document.getElementsByClassName("bx bx-plus");
+console.log(btnAdicionarProduto)
+
+

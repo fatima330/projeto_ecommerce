@@ -1,16 +1,35 @@
+//CODIGO DO BOTAO REMOVER
 const btnRemoverProduto = document.getElementsByClassName("delete");
 console.log(btnRemoverProduto)
 
-for (var i = 0; i <btnRemoverProduto.length; i++) {
+for (var i = 0; i < btnRemoverProduto.length; i++) {
   btnRemoverProduto[i].addEventListener("click", function() {
     event.target.parentElement.parentElement.remove()
   })
 }
 
-const btnSubtrairProduto = document.getElementsByClassName("bx bx-minus");
-console.log(btnSubtrairProduto)
+//CODIGO DO BOTAO DE DIMINUIR UM PRODUTO
+const btnSubtrairProduto = document.getElementById("subtrair");
+var btnContador = document.getElementById("contador");
 
-const btnAdicionarProduto = document.getElementsByClassName("bx bx-plus");
-console.log(btnAdicionarProduto)
+btnSubtrairProduto.addEventListener("click", function() {
+subtrairUm();
+})
 
+function subtrairUm(){
+const subtrair = Number(btnContador.innerText) -1; 
+btnContador.innerText = subtrair;
+}
+
+//CODIGO DO BOTAO DE ADICIONAR  UM PRODUTO
+const btnAdicionarProduto = document.getElementById("adicionar");
+
+btnAdicionarProduto.addEventListener("click", function()  {
+  adicionarUm();
+})
+
+function adicionarUm() {
+  const adicionar = Number(btnContador.innerText) + 1;
+  btnContador.innerText = adicionar;
+}
 

@@ -112,24 +112,3 @@ input[type="reset"] hover {
     transform: scale(1.2);
 }
 
-h1 {
-    color:  #384174;
-    font-size: 40px;
-}
-
-main {
-    background-color: #384174;
-}
-
-section{
-    display: flex;
-}
-section div {
-    background-color: #384174;
-    margin: 16px;
-    padding: 12px;
-height: 200px;
-width: 300px;
-}
-     
-

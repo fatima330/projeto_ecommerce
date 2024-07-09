@@ -11,11 +11,31 @@ for (var i = 0; i < btnRemoverProduto.length; i++) {
 //CODIGO DO BOTAO DE DIMINUIR UM PRODUTO
 const btnSubtrairProduto = document.getElementById("subtrair");
 var btnContador = document.getElementById("contador");
-const valorSubtotal = document.getElementById("valor-subtotal");
+const valorSubtotalProdutoPrimeiro = document.getElementById("valor-subtotal-produto-primeiro");
+const valorPrimeiro = document.getElementById("valor-primeiro");
+
+//VARIAVEIS DA CAIXA DE RESUMO DE COMPRAS
+const subtotalResumo = document.getElementById("subtotal");
+const total = document.getElementById("valor");
+
+function subtotalResumoCompras() {
+  const subtotal = Number ( valorSubtotalProdutoSegundo.innerText.replace("R$ ","")) + Number(valorSubtotalProdutoPrimeiro.innerText.replace("R$ ",""));
+  subtotalResumo.innerText = "R$ " + subtotal;
+}
+
+function totalCompras() {
+  debugger;
+const comprasTotal = Number (subtotalResumo.innerText.replace("R$ ",""));
+total.innerText = "R$ " + comprasTotal;
+}
+
 
 btnSubtrairProduto.addEventListener("click", function() {
 subtrairUm();
-atualizarSubtotal();
+atualizarSubtotalPrimeiroProduto();
+subtotalResumoCompras();
+totalCompras();
+
 })
 
 function subtrairUm(){
@@ -29,7 +49,10 @@ const btnAdicionarProduto = document.getElementById("adicionar");
 
 btnAdicionarProduto.addEventListener("click", function()  {
   adicionarUm();
-  atualizarSubtotal();
+  atualizarSubtotalPrimeiroProduto();
+  subtotalResumoCompras();
+  totalCompras();
+
 })
 
 function adicionarUm() {
@@ -37,26 +60,31 @@ function adicionarUm() {
   btnContador.innerText = adicionar;
 }
 
-//SUBTOTAL DO PRODUTO ATUALIZADO
-function atualizarSubtotal() {
-  const valorAtual = Number(valorSubtotal.innerText.replace("R$ ", ""));
-  const novoSubtotal = Number(btnContador.innerText) * 150; // 150 é o valor unitário
-  valorSubtotal.innerText = "R$ " + novoSubtotal;
+//(variavel.replace('valor', 'substituicao')
+
+// ATUALIZA O VALOR QUANDO O USUARIO ACRESCENTA OU DIMINUI A QUANTIDADE DE PRODUTO
+function atualizarSubtotalPrimeiroProduto() {
+  const valorPrimeiroConvertido = Number(valorPrimeiro.innerText.replace("R$ ",""));
+  const novoSubtotal = Number(btnContador.innerText) * valorPrimeiroConvertido; 
+  valorSubtotalProdutoPrimeiro.innerText = "R$ " + novoSubtotal;
 }
 
 
 
 //----------------------------------------------------------------
 
-//CODIGO DO BOTAO DE DIMINUIR DO SEGUNDO PRODUTO
+//VARIAVEIS DO CODIGO DO BOTAO DE DIMINUIR DO SEGUNDO PRODUTO
 const btnSubtrairProduto1 = document.getElementById("subtrair1");
 var btnContador1 = document.getElementById("contador1");
-const valorSubtotal1 = document.getElementById("valor-subtotal1");
+const valorSubtotalProdutoSegundo = document.getElementById("valor-subtotal-produto-segundo");
+const valorSegundo = document.getElementById("valor-segundo");
 
 
 btnSubtrairProduto1.addEventListener("click", function() {
 subtrair1();
-atualizarSubtotal1();
+atualizarSubtotalSegundoProduto();
+subtotalResumoCompras();
+totalCompras();
 })
 
 function subtrair1(){
@@ -69,7 +97,9 @@ const btnAdicionarProduto1 = document.getElementById("adicionar1");
 
 btnAdicionarProduto1.addEventListener("click", function()  {
   adicionar1();
-  atualizarSubtotal1();
+  atualizarSubtotalSegundoProduto();
+  subtotalResumoCompras();
+  totalCompras();
 })
 
 function adicionar1() {
@@ -77,13 +107,10 @@ function adicionar1() {
   btnContador1.innerText = adicionar1;
 }
 
-function atualizarSubtotal1() {
-  const valorAtual1 = Number(valorSubtotal1.innerText.replace("R$ ", ""));
-  const novoSubtotal1 = Number(btnContador1.innerText) * 170; // 170 é o valor unitário
-  valorSubtotal1.innerText = "R$ " + novoSubtotal1;
+//ATUALIZA O VALOR QUANDO O USUARIO ACRESCENTA OU DIMINUI A QUANTIDADE DE ITENS 
+function atualizarSubtotalSegundoProduto() {
+  const valorSegundoConvertido = Number(valorSegundo.innerText.replace("R$ ", ""));
+  const novoSubtotal1 = Number(btnContador1.innerText) * valorSegundoConvertido;
+  valorSubtotalProdutoSegundo.innerText = "R$ " + novoSubtotal1;
 }
-
-const subtotalResumo = document.getElementById("subtotal")
-
-const total = document.getElementById("total")
 

@@ -47,9 +47,10 @@ height: 250px;
 width: 100%;
 border-radius: 16px;
 font-family: 'Times New Roman', Times, serif;
-font-size: 18px;
+font-size: 20px;
 text-align: center;
+text-align: justify;
 border: 1px solid #384174;
 line-height: 18px;
-
+margin-top: 40px;
 }

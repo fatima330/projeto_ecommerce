@@ -8,8 +8,9 @@ for (var i = 0; i < btnRemoverProduto.length; i++) {
   })
 }
 
-//CODIGO DO BOTAO DE DIMINUIR UM PRODUTO
+//VARIAVEIS DO CODIGO DO BOTAO DE DIMINUIR E DE ADICIONAR DO PRIMEIRO PRODUTO
 const btnSubtrairProduto = document.getElementById("subtrair");
+const btnAdicionarProduto = document.getElementById("adicionar");
 var btnContador = document.getElementById("contador");
 const valorSubtotalProdutoPrimeiro = document.getElementById("valor-subtotal-produto-primeiro");
 const valorPrimeiro = document.getElementById("valor-primeiro");
@@ -18,18 +19,20 @@ const valorPrimeiro = document.getElementById("valor-primeiro");
 const subtotalResumo = document.getElementById("subtotal");
 const total = document.getElementById("valor");
 
+//FUNCAO DO RESUMO DE COMPRAS
 function subtotalResumoCompras() {
   const subtotal = Number ( valorSubtotalProdutoSegundo.innerText.replace("R$ ","")) + Number(valorSubtotalProdutoPrimeiro.innerText.replace("R$ ",""));
   subtotalResumo.innerText = "R$ " + subtotal;
 }
 
+//FUNCAO DO TOTAL DE COMPRAS
 function totalCompras() {
   debugger;
 const comprasTotal = Number (subtotalResumo.innerText.replace("R$ ",""));
 total.innerText = "R$ " + comprasTotal;
 }
 
-
+//EVENTO DE CLICK DO BOTAO DE SUBTRAIR DO PRIMEIRO PRODUTO
 btnSubtrairProduto.addEventListener("click", function() {
 subtrairUm();
 atualizarSubtotalPrimeiroProduto();
@@ -38,15 +41,14 @@ totalCompras();
 
 })
 
+//FUNCAO DO BOTAO DE SUBTRAIR DO PRIMEIRO PRODUTO
 function subtrairUm(){
 const subtrair = Number(btnContador.innerText) -1; 
 btnContador.innerText = subtrair;
 }
 
 
-//CODIGO DO BOTAO DE ADICIONAR  UM PRODUTO
-const btnAdicionarProduto = document.getElementById("adicionar");
-
+//EVENTO DE CLICK DO BOTAO DE ADICIONAR DO PRIMEIRO PRODUTO
 btnAdicionarProduto.addEventListener("click", function()  {
   adicionarUm();
   atualizarSubtotalPrimeiroProduto();
@@ -55,12 +57,13 @@ btnAdicionarProduto.addEventListener("click", function()  {
 
 })
 
+//FUNCAO DE ADICIONAR DO PRIMEIRO PRODUTO
 function adicionarUm() {
   const adicionar = Number(btnContador.innerText) + 1;
   btnContador.innerText = adicionar;
 }
 
-//(variavel.replace('valor', 'substituicao')
+//(variavel.replace('valor', 'substituicao') MODELO
 
 // ATUALIZA O VALOR QUANDO O USUARIO ACRESCENTA OU DIMINUI A QUANTIDADE DE PRODUTO
 function atualizarSubtotalPrimeiroProduto() {
@@ -69,17 +72,16 @@ function atualizarSubtotalPrimeiroProduto() {
   valorSubtotalProdutoPrimeiro.innerText = "R$ " + novoSubtotal;
 }
 
-
-
 //----------------------------------------------------------------
 
-//VARIAVEIS DO CODIGO DO BOTAO DE DIMINUIR DO SEGUNDO PRODUTO
+//VARIAVEIS DO CODIGO DO BOTAO DE DIMINUIR E DE ADICIONAR DO SEGUNDO PRODUTO
 const btnSubtrairProduto1 = document.getElementById("subtrair1");
+const btnAdicionarProduto1 = document.getElementById("adicionar1");
 var btnContador1 = document.getElementById("contador1");
 const valorSubtotalProdutoSegundo = document.getElementById("valor-subtotal-produto-segundo");
 const valorSegundo = document.getElementById("valor-segundo");
 
-
+//EVENTO DE CLICK DO BOTAO DE SUBTRAIR DO SEGUNDO PRODUTO
 btnSubtrairProduto1.addEventListener("click", function() {
 subtrair1();
 atualizarSubtotalSegundoProduto();
@@ -87,14 +89,13 @@ subtotalResumoCompras();
 totalCompras();
 })
 
+//FUNCAO DO BOTAO DE SUBTRAIR DO SEGUNDO PRODUTO
 function subtrair1(){
 const subtrair1 = Number(btnContador1.innerText) -1; 
 btnContador1.innerText = subtrair1;
 }
 
-//CODIGO DO BOTAO DE ADICIONAR DO SEGUNDO PRODUTO
-const btnAdicionarProduto1 = document.getElementById("adicionar1");
-
+//EVENTO DE CLICK DO BOTAO DE ADICIONAR DO SEGUNDO PRODUTO
 btnAdicionarProduto1.addEventListener("click", function()  {
   adicionar1();
   atualizarSubtotalSegundoProduto();
@@ -102,6 +103,7 @@ btnAdicionarProduto1.addEventListener("click", function()  {
   totalCompras();
 })
 
+//FUNCAO DE ADICIONAR DO SEGUNDO PRODUTO
 function adicionar1() {
   const adicionar1 = Number(btnContador1.innerText) + 1;
   btnContador1.innerText = adicionar1;
@@ -113,4 +115,3 @@ function atualizarSubtotalSegundoProduto() {
   const novoSubtotal1 = Number(btnContador1.innerText) * valorSegundoConvertido;
   valorSubtotalProdutoSegundo.innerText = "R$ " + novoSubtotal1;
 }
-

@@ -32,7 +32,7 @@ a {
 }
 
 .header {
-  margin-top: 30px;
+  margin-top: px;
   background: var(--color-neutral-60);
   padding-right: 30px;
   /* para afastar o icone de hamburguer  em tela reduzida */
@@ -40,17 +40,19 @@ a {
 
 .nav {
   width: 100%;
-  height: 90px;
+  height: 70px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 10px;
 }
 
 .logo {
-  height: 150px;
+  height: 70px;
+  margin-right: 50px;
   /*altura da logo */
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 0px 0px 0px;
   left: 0;
 }
 
@@ -88,11 +90,14 @@ h5 {
 .nav-list a {
   font-size: 22px;
   color: #fff;
-  transition: all 0.3s ease;
+  
 }
 
 .nav-list a:hover {
-  color: #a8a29e;
+  color: #8e3051;
+  border-bottom: 8px solid #8e3051; 
+  padding-bottom: 17px;
+  
 }
 
 .hero {
@@ -116,7 +121,8 @@ h5 {
   background: #eae4e4;
   margin-top: 5px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
+  
 }
 
 .search-icon {
@@ -158,7 +164,8 @@ h5 {
 
 .welcome {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding: 35px;
   gap: 25px;
@@ -167,18 +174,21 @@ h5 {
   border-radius: 15px;
   background-color: var(--color-neutral-90);
   font-size: 14px;
+  width: 100%;
+  height: 400px;
 }
 
 /* inicio form contato */
 
 /*Página do Obrigado*/
 .main_index {
-  display: block;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
-  margin: 90px;
-  justify-content: center;
-  min-height: 50vh;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 100vh;
 }
 
 .text {
@@ -199,6 +209,9 @@ h5 {
     z-index: 2;
   }
 
+  .welcome {
+    height: 525px;
+  }
   .nav-list {
     position: absolute;
     top: 0;
@@ -223,19 +236,23 @@ h5 {
   }
 
   .nav-list li:nth-child(1) a {
-    transition: 0.5s 0.2s;
+    transition: all 0.3s ease;
+    border: none;
   }
 
   .nav-list li:nth-child(2) a {
-    transition: 0.5s 0.4s;
+    transition: all 0.3s ease;
+    border: none;
   }
 
   .nav-list li:nth-child(3) a {
-    transition: 0.5s 0.6s;
+    transition: all 0.3s ease;
+    border: none;
   }
 
   .nav-list li:nth-child(4) a {
-    transition: 0.5s 0.8s;
+    transition: all 0.3s ease;
+    border: none;
   }
 
   .nav.active .nav-list {

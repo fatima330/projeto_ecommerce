@@ -32,7 +32,10 @@ a {
 }
 
 .header {
+<<<<<<< HEAD
   margin-top: px;
+=======
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   background: var(--color-neutral-60);
   padding-right: 30px;
   /* para afastar o icone de hamburguer  em tela reduzida */
@@ -50,9 +53,13 @@ a {
 
 .logo {
   height: 70px;
+<<<<<<< HEAD
   margin-right: 50px;
   /*altura da logo */
   border-radius: 0px 0px 0px 0px;
+=======
+  /*altura da logo */
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   left: 0;
 }
 
@@ -94,10 +101,16 @@ h5 {
 }
 
 .nav-list a:hover {
+<<<<<<< HEAD
   color: #8e3051;
   border-bottom: 8px solid #8e3051; 
   padding-bottom: 17px;
   
+=======
+  color: var(--color-neutral-50);
+  border-bottom: 5px solid var(--color-neutral-50);
+  padding-bottom: 17px;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
 }
 
 .hero {
@@ -154,11 +167,11 @@ h5 {
 }
 
 .search-input:hover {
-  background-color: #20080be9;
+  background-color:var(--color-neutral-60);
 }
 
 .search-input:focus {
-  background-color: #2c0f12e9;
+  background-color: var(--color-neutral-60);
   box-shadow: 1px 1px 5px #16030c;
 }
 
@@ -185,9 +198,14 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+<<<<<<< HEAD
   margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
+=======
+  margin: 20px;
+  justify-content: center;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   min-height: 100vh;
 }
 
@@ -237,22 +255,38 @@ h5 {
 
   .nav-list li:nth-child(1) a {
     transition: all 0.3s ease;
+<<<<<<< HEAD
     border: none;
+=======
+    border-bottom: none;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   }
 
   .nav-list li:nth-child(2) a {
     transition: all 0.3s ease;
+<<<<<<< HEAD
     border: none;
+=======
+    border-bottom: none;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   }
 
   .nav-list li:nth-child(3) a {
     transition: all 0.3s ease;
+<<<<<<< HEAD
     border: none;
+=======
+    border-bottom: none;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   }
 
   .nav-list li:nth-child(4) a {
     transition: all 0.3s ease;
+<<<<<<< HEAD
     border: none;
+=======
+    border-bottom: none;
+>>>>>>> d95224267e28d8167f05a98f2313471f651079d9
   }
 
   .nav.active .nav-list {

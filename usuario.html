@@ -1,195 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/usuario.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Usuario</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Criar Uma Conta</h2>
+      </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="./assets/usuario.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Conecte-se</title>
-    <link rel="stylesheet" href="./assets/produtos.css">
-</head>
-
-<body style="background: #8e3051;">
-    <header class="header">
-        <div>
-            <nav class="nav">
-                <img class="logo" src="img/logo.png" alt="Garrafa de vinho e uma taça">
-                <button class="hamburger"></button>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
-                    <li>
-                        <form action="#" method="post">
-                            <label for="search-input" class="search-icon">
-                                <img class="lupa" src="img/lupa.svg" alt="Uma lupa"></label>
-                            <input type="text" class="search-input" id="search-input" required />
-                        </form>
-                    </li>
-                    <li>
-                        <a href="carrinho.html">
-                            <img class="icon" src="img/carrinho.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img class="icon" src="img/coração.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./usuario.html">
-                            <img class="icon" src="img/login.svg">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
         </div>
-    </header>
-    <br>
-    <br>
 
-    <h1>Conecte-se</h1>
-
-    <nav>
-        <ul>
-            <li><a>Campos Obrigatórios*</a>
-            </li>
-        </ul>
-    </nav>
-
-    <h2>Informações Pessoais</h2>
- <div>
-    <p>Nome Completo</p>
-    <input type="text" placeholder="Nome Completo" </div>
-<div></div>
-    <p>Data de nascimento</p>
-    <input type="text" placeholder="Data de nascimento" 
-
-<div><p>Cpf</p>
-<input type="text" placeholder="Cpf" 
-</div>
-    <p>E-mail</p>
-    <input type="text" placeholder="E-mail" 
-
-<div>
-    <p>Celular</p>
-    <input type="text" placeholder="Celular" 
-</div>
-
-    <main>
-        <section>
-            <h3>*Declaro que li e aceito os termos de uso</h3><button></button>
-
-            <p>Email/CPF</p>
-            <input type="text" placeholder="Email/CPF">
-            <button>Email/Cpf</button>
-            <div>
-                <p>Senha</p>
-
-                <input type="password" placeholder="Senha">
-                <button>Enviar</button>
-            </div>
-        </section>
-    </main>
-
-    <h4>Cadastrar conta</h4>
-    <input type="text" placeholder="Cadastar conta">
-    <button>Cadastrar Conta</button>
-
-
-    <footer>
-        <!-- SUGIRO SUBSTITUIR DIV POR SECTION AQUI ABAIXO. -->
-        <div id="footer_content">
-            <section id="footer_contacts">
-                <img class="logo_redonda" src="img/logo_redonda.png">
-                <h3>Nossos Canais</h3>
-                <!-- PODEM UTILIZAR LI AQUI TAMBÉM EM VEZ DE DIV! -->
-                <div id="footer_social_media">
-                    <a href="#" class="footer_link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#" class="footer_link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="footer_link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="img/deMaior.png" class="footer_link" id="">
-                        <img id="menor_idade" src="img/menor_idade.png" alt="">
-                    </a>
-                </div>
-            </section>
-            <ul class="footer_list">
-                <li>
-                    <h3>Vinhos</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Vinhos Tintos</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Vinhos Brancos</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Vinhos Rosés</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Vinhos Espumantes</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Champagnes</a>
-                </li>
-            </ul>
-            <ul class="footer_list">
-                <li>
-                    <h3>Produtores</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Thibault Liger-Belair</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Stella di Campalto</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Régis & Sylvain</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Domaine Jean Fournier</a>
-                </li>
-                <li>
-                    <a href="#" class="footer_link">Domaine Pfister</a>
-                </li>
-                <!-- SE ATENTEM A IDENTAÇÃO, PESSOAL! -->
-            </ul>
-            <div class="footer_subscribe">
-                <h3>Alguma Dúvida?<br>como podemos ajudar você?</h3>
-                <p>Horários de atendimento: De segunda a segunda 09h as 22hs.</p>
-                <p><a href="conosco.html" class="footer_link">Trabalhe conosco</a></p>
-
-
-                <!-- INCLUIR A TAG FORM PARA ENGLOBAR ESSE INPUT. TAMBÉM SUBSTITUIR O BUTTON POR UM INPUT DO TIPO SUBMIT. -->
-                <!-- NESSE CASO, TAMBÉM ACREDITO QUE NÃO HAJA NECESSIDADE DESSA DIV AQUI ABAIXO. -->
-                <div id="input_group">
-                    <input type="email" name="" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-            </div>
-
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
         </div>
-        <!-- PREFIRAM USAR CLASSES DO QUE IDS, PESSOAL! -->
-        <div class="footer_copyright">
-            &#169
-            Grupo 02 - Red&White Todos os Direitos Reservados <br>
-            <img src="img/etiqueta_proibido_bebida_para_menor-1000x1000.png" alt="">
-        </div>
-    </footer>
-</body>
 
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password-confirmation">Confirmação de senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+       
+
+        <div class="botao_form">
+            <button type="submit" class="btn_enviar">Enviar</button>
+            
+            <button class="btn_retornar"> <a href="index.html">Retornar</a></button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/usuario.js"></script>
+  </body>
 </html>

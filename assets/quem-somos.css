@@ -32,10 +32,14 @@ a {
 }
 
 .header {
-  
-  background: #20080be9;
+  margin-top: 30px;
+  background: var(--color-neutral-60);
   padding-right: 30px;
-  /* para afastar o icone de hamburguer em tela reduzida */
+}
+
+.title {
+  padding: 40px;
+  text-align: center;
 }
 
 .nav {
@@ -52,12 +56,10 @@ a {
 
 .icon {
   height: 35px;
-  /*altura da logo */
   border: none;
 }
 
 h5 {
-  /* texto da index */
   font-size: 30px;
   color: var(--color-neutral-40);
 }
@@ -68,10 +70,8 @@ h5 {
   align-items: center;
   justify-content: space-around;
   gap: 30px;
-  /* Espaço entre os intens da menu */
   list-style: none;
   margin-left: 30px;
-  /* Espaço entre a logo, a home e os itens da menu */
 }
 
 .nav-list a {
@@ -105,13 +105,11 @@ h5 {
 }
 
 .search-icon {
-  /* posição da lupa */
   position: absolute;
   transform: rotate(90deg);
 }
 
 .lupa {
-  /* tamanho da lupa */
   width: 20px;
   position: relative;
   margin-left: 5px;
@@ -128,7 +126,6 @@ h5 {
   background-color: #110303e9;
   border-radius: 8px;
   padding-left: 40px;
-  /* onde o cursor começa na busca */
   transition: all 0.3s ease;
 }
 
@@ -151,27 +148,46 @@ h5 {
   color: var(--color-neutral-40);
   border: 2px solid var(--color-neutral-40);
   border-radius: 15px;
-  background-color: #20080be9;
+  background-color: var(--color-neutral-60);
   padding: 20px;
   margin: 30px;
 }
 
-/* inicio quem somos */
-.container01 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  color: var(--color-neutral-40);
-  background-color: #613142;
-  border: 1px solid var(--color-neutral-40);
-  border-radius: 12px;
-  padding: 50px 50px 100px;
-  margin: 50px;
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: justify;
 }
 
-/*Página do Obrigado*/
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -280,7 +296,6 @@ h5 {
   }
 }
 
-/* inicio form footer */
 footer {
   width: 100%;
   color: var(--color-neutral-40);
@@ -374,7 +389,6 @@ footer .logo_redonda {
 }
 
 .footer_subscribe p {
-  /* horario de atendimento */
   color: var(--color-neutral-30);
   font-size: 16px;
   text-decoration: none;
@@ -422,14 +436,14 @@ footer .logo_redonda {
   padding: 1.5rem 0;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #footer_content {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width: 426px) {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;

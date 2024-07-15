@@ -8,7 +8,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, #9c3535 0%, #6d0505 100%);
+  background-color: #8e3051;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ body {
   padding: 20px;
 }
 h2{
-  color: #d90909;
+  color: #8e3051;
   text-align: center;
 }
 
@@ -90,8 +90,8 @@ h2{
 }
 
 .form button {
-  background-color: #d90909;
-  border: 2px solid #d90909;
+  background-color: #8e3051;
+  border: 2px solid #8e3051;
   color: #fff;
   font-size: 14px;
   width: 100%;

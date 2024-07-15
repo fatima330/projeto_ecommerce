@@ -10,8 +10,6 @@
   --color-neutral-70: #450017;
   --color-neutral-80: #ff0000;
   --color-neutral-90: #613142;
-
-
 }
 
 * {
@@ -34,7 +32,7 @@ a {
 }
 
 .header {
-  margin-top: 30px;
+  
   background: #20080be9;
   padding-right: 30px;
   /* para afastar o icone de hamburguer em tela reduzida */

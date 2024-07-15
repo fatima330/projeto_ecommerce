@@ -8,6 +8,7 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="style_slider.css">
   <script src="./scripts/index.js" defer></script>
   <title>Wine - Red and White</title>
 </head>
@@ -44,6 +45,45 @@
     </nav>
   </header>
   <main class="main_index">
+    <div class="slider">
+      <div class="slides">
+          <!--Radio Buttons-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--Fim Radio Buttons-->
+
+          <!--Slide images-->
+          <div class="slide first">
+              <img src="./img/sliders1.webp" alt="Promoção 1">
+          </div>
+          <div class="slide first">
+              <img src="./img/sliders2.webp" alt="Promoção 2">
+          </div>
+          <div class="slide first">
+              <img src="./img/sliders3.webp" alt="Promoção 3">
+          </div>
+          <div class="slide first">
+              <img src="./img/sliders4.webp" alt="Promoção 4">
+          </div>
+          <!--Fim slide images-->
+
+          <!--Navigation auto-->
+          <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+          </div> 
+      </div>
+      <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+      </div>
+  </div>
     <div class="welcome">
       <h1>
         Bem-vindo à Nossa Adega Virtual!

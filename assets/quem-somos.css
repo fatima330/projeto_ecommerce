@@ -11,6 +11,7 @@
   --color-neutral-80: #ff0000;
   --color-neutral-90: #613142;
   --color-neutral-100: #3c3c3c;
+  --color-neutral-110: #3b0f14;
 }
 
 * {
@@ -253,6 +254,7 @@ h5 {
   border-radius: 16px;
 }
 
+/* Fim form contato */
 @media (max-width: 760px) {
   .hamburger {
     display: block;
@@ -265,16 +267,16 @@ h5 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    clip-path: circle(0px at 85% 77px);
-    background: #3b0f14;
-    border-radius: 15px;
-    padding: 50px 0;
-    pointer-events: none;
+    background: var(--color-neutral-110);
+    clip-path: circle(0px at 85% 35px);
     transition: all 0.3s ease;
+    padding: 50px 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
     z-index: 1;
+    border-radius: 15px;
   }
 
   .nav-list a {
@@ -283,19 +285,23 @@ h5 {
   }
 
   .nav-list li:nth-child(1) a {
-    transition: 0.5s 0.2s;
+    transition: all 0.3s ease;
+    border-bottom: none;
   }
 
   .nav-list li:nth-child(2) a {
-    transition: 0.5s 0.4s;
+    transition: all 0.3s ease;
+    border-bottom: none;
   }
 
   .nav-list li:nth-child(3) a {
-    transition: 0.5s 0.6s;
+    transition: all 0.3s ease;
+    border-bottom: none;
   }
 
   .nav-list li:nth-child(4) a {
-    transition: 0.5s 0.8s;
+    transition: all 0.3s ease;
+    border-bottom: none;
   }
 
   .nav.active .nav-list {
@@ -309,7 +315,7 @@ h5 {
 
   .nav.active .hamburger {
     position: absolute;
-    top: 66px;
+    top: 25px;
     right: 26px;
     border-top-color: transparent;
   }
@@ -324,6 +330,7 @@ h5 {
   }
 }
 
+/* inicio form footer */
 footer {
   width: 100%;
   color: var(--color-neutral-40);
@@ -341,20 +348,25 @@ footer .logo_redonda {
 }
 
 .footer_paragrafo {
-  color: var(--color-neutral-80);
+  color: red;
 }
 
 #footer_content {
+  background-color: var(--color-neutral-10);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: var(--color-neutral-10);
   padding: 3rem 3.5rem;
+}
+
+#footer_contacts p {
+  height: 30px;
 }
 
 #footer_social_media {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+
 }
 
 #footer_social_media .footer_link {
@@ -380,6 +392,7 @@ footer .logo_redonda {
 
 #footer_social_media .footer_link:hover {
   opacity: 0.8;
+
 }
 
 #instagram {
@@ -417,6 +430,7 @@ footer .logo_redonda {
 }
 
 .footer_subscribe p {
+  /* horario de atendimento */
   color: var(--color-neutral-30);
   font-size: 16px;
   text-decoration: none;
@@ -436,18 +450,19 @@ footer .logo_redonda {
 }
 
 #input_group input {
-  width: 100%;
+  all: unset;
   padding: 0.75rem;
+  width: 100%;
 }
 
 #input_group button {
-  height: 100%;
-  font-size: 1.5rem;
-  color: var(--color-neutral-40);
   background-color: #7f37c9;
-  border-radius: 0px 4px 4px 0px;
   border: none;
-  padding: 0 1rem;
+  color: var(--color-neutral-40);
+  padding: 0 1.25rem;
+  font-size: 1.5rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -461,17 +476,19 @@ footer .logo_redonda {
   justify-content: center;
   background-color: var(--color-neutral-0);
   font-size: 0.8rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
+  font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width:768px) {
   #footer_content {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width:426px) {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;

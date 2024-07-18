@@ -10,6 +10,10 @@
   --color-neutral-70: #450017;
   --color-neutral-80: #ff0000;
   --color-neutral-90: #613142;
+  --color-neutral-100: #3c3c3c;
+  --color-neutral-110: #3b0f14;
+  
+
 }
 
 * {
@@ -85,7 +89,7 @@ h5 {
 
 .nav-list a {
   font-size: 22px;
-  color: #fff;
+  color:var(--color-neutral-40);
   
 }
 
@@ -205,8 +209,8 @@ h5 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--color-neutral-70);
-    clip-path: circle(0px at 85% 77px);
+    background: var(--color-neutral-110);
+    clip-path: circle(0px at 85% 35px);
     transition: all 0.3s ease;
     padding: 50px 0;
     flex-direction: column;
@@ -253,7 +257,7 @@ h5 {
 
   .nav.active .hamburger {
     position: absolute;
-    top: 66px;
+    top: 25px;
     right: 26px;
     border-top-color: transparent;
   }

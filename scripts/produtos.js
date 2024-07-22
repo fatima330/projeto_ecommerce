@@ -2,7 +2,7 @@ const click_js = document.getElementById("click_js");
 
 click_js.addEventListener("mouseover", event => {
 
-    event.target.textContent = "Clique para conhecer mais!"
+    event.target.textContent = "Clique para conhecer!"
 
 });
 
@@ -14,7 +14,7 @@ const click_js2 = document.getElementById("click_js2");
 
 click_js2.addEventListener("mouseover", event => {
 
-    event.target.textContent = "Clique para conhecer mais!"
+    event.target.textContent = "Clique para conhecer!"
 
 });
 

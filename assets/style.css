@@ -290,7 +290,7 @@ footer .logo_redonda {
 }
 
 .footer_paragrafo {
-  color: red;
+  color:var(--color-neutral-80);
 }
 
 #footer_content {

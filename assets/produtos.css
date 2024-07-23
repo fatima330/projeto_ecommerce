@@ -82,6 +82,57 @@
   padding: 15px;
 }
 
+.cardwine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 420px;
+  height: 220px;
+  border: 1px solid var(--color-neutral-10);
+  border-radius: 15px;
+  background-color: var(--color-neutral-40);
+  color: var(--color-neutral-10);
+  text-align: left;
+  margin: 14px;
+}
+
+.textwine {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  border-radius: 15px;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.card img {
+  display: flex;
+  align-items: center;
+  width: 420px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.preco p {
+  margin: 10px;
+  gap: 10px;
+}
+
+.preco span {
+  border: 1px solid saddlebrown;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
 .products_list {
   display: flex;
   flex-wrap: wrap;

@@ -32,6 +32,20 @@
 
 }
 
+.main_prod_wine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: #171717;
+  background-color:var(--color-neutral-30);
+  margin-top: 25px;
+  min-height: 100vh;
+  max-width: 1000px;
+
+}
+
+
 .produtosbackgroud {
   background-color: var(--color-neutral-50);
   background-repeat: no-repeat;

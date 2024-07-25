@@ -27,22 +27,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
   min-height: 100vh;
 
 }
 
-.main_prod_wine {
+.principal {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  border: #171717;
-  background-color:var(--color-neutral-30);
-  margin-top: 25px;
-  min-height: 100vh;
-  max-width: 1000px;
-
+  padding-top: 0px;
+  width: 1000px;
 }
 
 
@@ -52,6 +45,10 @@
   background-position: center;
   background-size: cover;
   backdrop-filter: url(filters.svg#filter) blur(2px) brightness(100%);
+}
+
+.produtosbackgroud2 {
+  background-color: #e1d9d4;
 }
 
 .border {
@@ -105,46 +102,55 @@
 .card {
   display: flex;
   flex-wrap: nowrap;
-  width: 420px;
-  height: 220px;
-  border: 1px solid var(--color-neutral-10);
-  border-radius: 15px;
+  width: 100vh;
   background-color: var(--color-neutral-40);
   color: var(--color-neutral-10);
   text-align: left;
-  margin: 14px;
+  margin: 5px;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .textwine {
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
   padding-right: 20px;
   border-radius: 15px;
-  align-items: center;
+  align-items: left;
   padding: 10px;
-  gap: 10px;
+  gap: 5px;
+  list-style: none;
 }
 
-.card img {
+#flags {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;  
+  overflow:hidden;
+}
+
+.destaquepreco {
+  color: #fa3b7a;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#cardprincipal {
   display: flex;
   align-items: center;
-  width: 420px;
-  height: 180px;
-  margin: 10px;
-  border-radius: 15px;
+  width: 320px;
   overflow: hidden;
 }
 
-.preco p {
-  margin: 10px;
-  gap: 10px;
-}
-
-.preco span {
-  border: 1px solid saddlebrown;
+.preco {
+  background-color: #7ebc43;
+  border-color: #548e1e;
+  color: #fff;
   border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .products_list {

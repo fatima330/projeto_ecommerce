@@ -1,0 +1,18 @@
+{
+  "name": "projeto_ecommerce",
+  "version": "1.0.0",
+  "description": "Este projeto foi desenvolvido como parte do curso da Proz pela Turma 2. Nosso objetivo foi criar um site de e-commerce especializado em vinhos, aplicando os conhecimentos adquiridos nas aulas de HTML, CSS e JavaScript. Este projeto representa o esforço coletivo e a colaboração entre os integrantes da turma, sob a orientação do Professor Rafael.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.11.3"
+  }
+}

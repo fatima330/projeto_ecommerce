@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/register.css">
+
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Registrar Usuário</h1>
+    <form id="registerForm">
+        <input type="text" id="username" placeholder="Nome de Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="telefone" placeholder="Telefone" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Link para a página de login -->
+    <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+
+            try {
+                const response = await fetch('/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password, email, telefone })
+                });
+
+                const data = await response.text();
+                alert(data); // Exibe a resposta do servidor
+            } catch (error) {
+                console.error('Erro ao registrar:', error);
+                alert('Erro ao registrar. Tente novamente.');
+            }
+        });
+    </script>
+</body>
+</html>
+

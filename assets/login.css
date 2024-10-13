@@ -47,6 +47,7 @@ input[type="text"], input[type="password"] {
   box-sizing: border-box;
 }
 
+
 /* Estilo para o botão */
 button {
   width: 100%;
@@ -63,6 +64,24 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+.btn-retornar {
+  background-color: #4CAF50; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 10px; /* Espaciamento interno */
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: inline-block; /* Permite que o link tenha dimensões */
+  font-size: 14px; /* Tamanho da fonte */
+  margin: 5px 0; /* Margem ao redor do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.btn-retornar:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
 
 /* Ajuste para telas pequenas */
 @media (max-width: 600px) {

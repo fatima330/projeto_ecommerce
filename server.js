@@ -1,3 +1,6 @@
+//Acesse - http://localhost:3000/register.html
+//Esta URL refere-se a um servidor local que está sendo executado na minha maquina (localhost) na porta 3000. Isso foi para a tividade da Joy do curso de aws
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path'); // Para servir arquivos estáticos
@@ -6,7 +9,7 @@ const connection = require('./db'); // Importa a conexão do db.js
 const app = express();
 const port = 3000;
 
-// Middleware para processar *JSON
+// Middleware para processar JSON
 app.use(bodyParser.json()); 
 
 // *Middleware para servir arquivos estáticos
@@ -62,3 +65,4 @@ app.post('/login', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
